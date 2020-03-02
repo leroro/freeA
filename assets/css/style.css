@@ -1205,11 +1205,11 @@ caption.sr-only {
 }
 
 .title1 {
-  margin: 15px 0 5px;
+  margin: 15px 0 10px;
   color: #5277ca;
   font-size: 18px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1;
 }
 
 .title1 + .title2, .title1:first-child {
@@ -1352,6 +1352,80 @@ caption.sr-only {
   top: .50em;
 }
 
+.tab-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.tab-list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5em;
+          flex: 1 1 5em;
+}
+
+.tab-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+
+.main-tab-nav .tab-list {
+  background-color: #e4eaf8;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #8e97ac;
+  font-weight: 500;
+}
+
+.main-tab-nav .tab-list li.on a {
+  color: #000;
+  border: 2px solid #494949;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.main-tab-nav .tab-list li.on .count {
+  color: #ff6600;
+}
+
+.main-tab-nav .tab-list a {
+  height: 47px;
+}
+
+.sub-tab-nav .tab-list {
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 12px;
+}
+
+.sub-tab-nav .tab-list a {
+  height: 34px;
+  padding-top: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.sub-tab-nav .tab-list li.on a {
+  font-weight: bold;
+  color: #000;
+  border-color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+
 .wrapper {
   padding-top: 45px;
   padding-bottom: 70px;
@@ -1393,9 +1467,9 @@ caption.sr-only {
 
 #titlebar .title {
   padding-left: 25px;
-  background: url(../images/favicon.png) no-repeat left 5px;
+  background: url(../images/favicon.png) no-repeat left 3px;
   background-size: 20px auto;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -1409,7 +1483,7 @@ caption.sr-only {
 }
 
 #content {
-  padding: 15px 20px;
+  padding: 20px;
 }
 
 #tabbar {
@@ -1501,5 +1575,58 @@ caption.sr-only {
   height: .04rem;
   border-radius: 50%;
   background-color: #a4abb7;
+}
+
+.log-list {
+  margin: 10px -20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.log-list dt {
+  border-bottom: 1px solid #ddd;
+}
+
+.log-list dt a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.log-list dt a .lose {
+  font-weight: 500;
+  color: #5277ca;
+}
+
+.log-list dt a .win {
+  font-weight: 500;
+  color: #ff0028;
+}
+
+.log-list dt.on {
+  font-weight: bold;
+}
+
+.log-list dt.on + dd {
+  display: block;
+}
+
+.log-list > dd {
+  display: none;
+  background-color: rgba(82, 119, 202, 0.05);
+  line-height: 1.5;
+  font-size: 13px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.box {
+  background-color: #5277ca;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px 15px;
 }
 /*# sourceMappingURL=style.css.map */

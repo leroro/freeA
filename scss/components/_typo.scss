@@ -17,11 +17,11 @@
 
 // 타이틀
 .title1 {
-	margin: 15px 0 5px;
+	margin: 15px 0 10px;
 	color: $primary;
 	font-size: 18px;
 	font-weight: 500;
-	line-height: 30px;
+	line-height: 1;
 
 	+.title2,
 	&:first-child {

@@ -29,3 +29,52 @@
     }
   }
 }
+
+.log-list {
+  margin: 10px -1 * $spacing 0;
+  border-top: 1px solid #ddd;
+
+  dt {
+    border-bottom: 1px solid #ddd;
+
+    a {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px $spacing;
+
+      .lose {
+        font-weight: 500;
+        color: $blue;
+      }
+
+      .win {
+        font-weight: 500;
+        color: $red;
+      }
+    }
+
+    &.on {
+      font-weight: bold;
+
+      +dd {
+        display: block;
+      }
+    }
+  }
+
+  >dd {
+    display: none;
+    background-color: rgba($primary, 0.05);
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 15px $spacing;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.box {
+  background-color: $primary;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px 15px;
+}
