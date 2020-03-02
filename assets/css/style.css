@@ -1357,15 +1357,23 @@ caption.sr-only {
   padding-bottom: 70px;
 }
 
+.container {
+  max-width: 640px;
+  margin: auto;
+}
+
 #titlebar {
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
-  height: 45px;
   background-color: #5277ca;
   padding: 0 20px;
+  color: #fff;
+}
+
+#titlebar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1375,8 +1383,8 @@ caption.sr-only {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 45px;
   text-align: center;
-  color: #fff;
 }
 
 #titlebar .logo {

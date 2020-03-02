@@ -6,15 +6,16 @@
   top: 0;
   left: 0;
   right: 0;
-  height: $titlebar-height;
   background-color: $primary;
   padding: 0 $spacing;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  text-align: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $titlebar-height;
+    text-align: center;
+  }
 
   color: #fff;
 

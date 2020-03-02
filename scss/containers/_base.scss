@@ -2,3 +2,8 @@
   padding-top: $titlebar-height;
   padding-bottom: $tabbar-height;
 }
+
+.container {
+  max-width: 640px;
+  margin: auto;
+}
