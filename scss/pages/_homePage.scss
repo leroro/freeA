@@ -70,6 +70,10 @@
     padding: 15px $spacing;
     border-bottom: 1px solid #ddd;
   }
+
+  @include media-breakpoint-up(md) {
+    margin: 10px 0;
+  }
 }
 
 .box {

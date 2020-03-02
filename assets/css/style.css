@@ -1623,6 +1623,12 @@ caption.sr-only {
   border-bottom: 1px solid #ddd;
 }
 
+@media (min-width: 768px) {
+  .log-list {
+    margin: 10px 0;
+  }
+}
+
 .box {
   background-color: #5277ca;
   border-radius: 5px;
