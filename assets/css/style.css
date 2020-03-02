@@ -1380,10 +1380,13 @@ caption.sr-only {
 }
 
 #titlebar .logo {
-  height: 30px;
+  height: 25px;
 }
 
 #titlebar .title {
+  padding-left: 25px;
+  background: url(../images/favicon.png) no-repeat left 5px;
+  background-size: 20px auto;
   font-size: 19px;
   font-weight: 500;
 }
