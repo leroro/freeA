@@ -40,7 +40,7 @@ html {
 body {
   position: relative;
   min-width: 360px;
-  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "malgungothic", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "malgungothic", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.14rem;
   line-height: 1.4;
   color: #000;
@@ -1286,7 +1286,7 @@ caption.sr-only {
 }
 
 .list-dot > li:before {
-  top: .65em;
+  top: 6px;
   width: .04rem;
   height: .04rem;
   border-radius: 50%;
@@ -1485,7 +1485,7 @@ caption.sr-only {
           box-sizing: border-box;
   position: absolute;
   left: 0;
-  top: .65em;
+  top: 6px;
   width: .04rem;
   height: .04rem;
   border-radius: 50%;
