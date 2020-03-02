@@ -1353,10 +1353,15 @@ caption.sr-only {
 }
 
 .wrapper {
+  padding-top: 45px;
   padding-bottom: 70px;
 }
 
 #titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 45px;
   background-color: #5277ca;
   padding: 0 20px;
@@ -1421,12 +1426,17 @@ caption.sr-only {
 
 #tabbar li.on {
   color: #5277ca;
+  font-weight: bold;
 }
 
 #tabbar li.on .fa,
 #tabbar li.on .far,
 #tabbar li.on .fas {
   opacity: 1;
+}
+
+#tabbar li.on .text {
+  font-weight: bold;
 }
 
 #tabbar a {

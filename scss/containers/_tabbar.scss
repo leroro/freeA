@@ -20,11 +20,16 @@
 
     &.on {
       color: $primary;
+      font-weight: bold;
 
       .fa,
       .far,
       .fas {
         opacity: 1;
+      }
+
+      .text {
+        font-weight: bold;
       }
     }
   }

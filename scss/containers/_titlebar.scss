@@ -1,6 +1,10 @@
 // header
 
 #titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: $titlebar-height;
   background-color: $primary;
   padding: 0 $spacing;
