@@ -1,0 +1,107 @@
+//
+// Global variables
+//
+
+$responsive: true;
+
+// 색상
+// 글꼴 및 범용
+$primary: #5277ca !default;
+$secondary: #ff7c88 !default;
+
+$red: #ff0028 !default;
+$orange: #ff6600 !default;
+$yellow: #f4ad32 !default;
+// $pink: #ff0066 !default;
+// $brown: #cc9966 !default;
+// $green: #99cc33 !default;
+// $turquoise: #009999 !default;
+$blue: #5277ca !default;
+// $purple: #666699 !default;
+
+
+
+$default: #000 !default;
+$black: #000 !default;
+// $darkgray: rgb(12, 12, 12) !default;
+$gray: #777 !default;
+$lightgray: #f2f2f2 !default;
+$white: #fff !default;
+
+$colors: () !default;
+$colors: map-merge(("primary": $primary,
+		"secondary": $secondary,
+		"blue": $blue,
+		"orange": $orange,
+		"yellow" : $yellow,
+		"default": $default,
+		"black": $black,
+		// "darkgray": $darkgray,
+		"gray": $gray,
+		"lightgray": $lightgray,
+		"white": $white,
+	),
+	$colors);
+
+// 배경
+// $bg-darkgray: #666 !default;
+$bg-gray: #ebebeb !default;
+$bg-lightgray: #f2f2f2 !default;
+$bg-blue-light: #e4eaf8 !default;
+
+
+$bg-colors: () !default;
+$bg-colors: map-merge(( // "bg-darkgray": $bg-darkgray,
+		"bg-gray": $bg-gray,
+		"bg-lightgray": $bg-lightgray,
+		"bg-blue-light": $bg-blue-light,
+		// "bg-gold": $gold,
+		// "bg-brown": $brown,
+		// "bg-green": $green,
+		// "bg-turquoise": $turquoise,
+		// "bg-blue": $blue,
+		// "bg-purple": $purple
+	),
+	$colors);
+
+// 라인
+// $border-dark: #848484 !default;
+$border-base: #d9d9d9 !default;
+$border-light: #e0e0e0 !default;
+
+// 글꼴
+$font-family-base: "Noto Sans KR",
+-apple-system,
+BlinkMacSystemFont,
+"malgungothic",
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji" !default;
+
+$font-size-xs: .12rem !default;
+$font-size-sm: .13rem !default;
+$font-size-base: .14rem !default;
+$font-size-lg: .16rem !default;
+$font-size-xl: .18rem !default;
+
+// 경로
+$url-img: "../images" !default;
+
+// breakpoints
+$grid-breakpoints: (xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 1025px,
+	xl: 1200px) !default;
+
+// 그리드
+$min-width: 360px !default;
+$spacing: 20px !default;
+
+// Grid
+$titlebar-height: 45px;
+$tabbar-height: 70px;

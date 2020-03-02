@@ -1,0 +1,63 @@
+// 두께
+// .text-light {
+// 	font-weight: 300 !important;
+// }
+
+.text-normal {
+	font-weight: normal !important;
+}
+
+// .text-medium {
+// 	font-weight: bold !important;
+// }
+
+.text-bold {
+	font-weight: bold !important;
+}
+
+// 타이틀
+.title1 {
+	margin: 15px 0 5px;
+	color: $primary;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+
+	+.title2,
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.title2 {
+	margin: 15px 0 5px;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+// 크기
+.text-xs {
+	font-size: $font-size-xs;
+}
+
+.text-sm {
+	font-size: $font-size-sm;
+}
+
+.text-md {
+	font-size: $font-size-base;
+}
+
+.text-lg {
+	font-size: $font-size-lg;
+}
+
+.text-xl {
+	font-size: $font-size-xl;
+}

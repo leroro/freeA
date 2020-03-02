@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@import "variables";
+@import "breakpoints";
+@import "mixins";
+@import url(fa.min.css); // https://fontawesome.com/ v5.9.0
+@import "webfonts";
+@import "default";
+
+// utilities
+@import "utilities/spacing";
+@import "utilities/align";
+// @import "utilities/display";
+
+// components
+@import "components/colors";
+@import "components/typo";
+// @import "components/buttons";
+// @import "components/icons";
+// @import "components/datepicker";
+@import "components/lists";
+// @import "components/tabmenu";
+// @import "components/forms";
+// @import "components/popups";
+
+// containers
+@import "containers/base";
+@import "containers/titlebar";
+@import "containers/content";
+@import "containers/tabbar";
+
+// pages
+// [필독] SCSS 작업방법 안내
+// 1. IA에 정의된 대메뉴별 path명과 맞춰 scss 파일 추가 후 사용
+//    예) path명 + Pages
+// 2. 색상값 등 변수 사용 필수 : _variables.scss 참고
+@import "pages/homePage";
+// @import "pages/loginPage";
+// @import "pages/memberPages";
+// @import "pages/requestPages";
+// @import "pages/processingPages";

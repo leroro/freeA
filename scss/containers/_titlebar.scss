@@ -1,0 +1,29 @@
+// header
+
+#titlebar {
+  height: $titlebar-height;
+  background-color: $primary;
+  padding: 0 $spacing;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  color: #fff;
+
+  .logo {
+    height: 30px;
+  }
+
+  .title {
+    font-size: 19px;
+    font-weight: 500;
+  }
+
+  .btn {
+    min-width: 40px;
+    height: $titlebar-height;
+  }
+}

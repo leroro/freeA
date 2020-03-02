@@ -1,0 +1,31 @@
+// 메인
+
+.history-list {
+  dt {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    position: relative;
+    padding-left: .12rem;
+
+    &:before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+
+      top: .65em;
+      width: .04rem;
+      height: .04rem;
+      border-radius: 50%;
+      background-color: #a4abb7;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+// 
+// Forms
+// 
+
+.form-control {
+	max-width: 100%;
+	height: 40px;
+	padding: 9px 0;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	border-bottom-color: $border-base;
+	border-radius: 0;
+
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	appearance: none;
+
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 20px 20px;
+
+	&.full {
+		width: 100%;
+	}
+
+	&.inline {
+		width: auto !important;
+	}
+
+	&:focus {
+		border-bottom-color: #000;
+	}
+
+	&::-webkit-input-placeholder {
+		color: #c5c5c5;
+		opacity: 1;
+	}
+
+	&:-ms-input-placeholder {
+		color: #c5c5c5;
+		opacity: 1;
+	}
+
+	&:read-only:not(select),
+	&[readonly],
+	&:disabled,
+	.disabled,
+	.readonly {
+		font-weight: normal;
+		color: #c5c5c5;
+		// background-color: $bg-lightgray;
+		background-image: url(#{$url-img}/ico-lock-lightgray.png);
+	}
+
+	&.is-invalid {
+		color: $red;
+		border-bottom-color: $red;
+		background-image: url(#{$url-img}/ico-invalid-red.png);
+	}
+}
+
+textarea {
+	&.form-control {
+		&:focus {
+			border-color: #000;
+		}
+	}
+}
+
+select.form-control {
+	padding: 0 .35rem 0 .12rem;
+	max-width: 100%;
+	line-height: normal;
+	background: #fff url(#{$url-img}/ico-chevron-thin-down.png) no-repeat right .13rem center;
+	background-size: auto auto;
+
+	&::-ms-expand {
+		display: none;
+	}
+
+	.ie9 & {
+		padding-right: 0 !important;
+		background: #fff;
+	}
+}
+
+.form-control-date {
+	width: 150px;
+
+	@if ($responsive) {
+		@include media-breakpoint-down(md) {
+			max-width: calc(100% - 31px);
+		}
+	}
+}
+
+label {
+	>* {
+		vertical-align: middle;
+	}
+}
+
+input {
+	$size: 19px;
+
+	&[type=checkbox],
+	&[type=radio] {
+		appearance: none;
+		width: $size;
+		height: $size;
+		border: 1px solid #cfcfcf;
+		background-color: #fff;
+		vertical-align: middle;
+		box-shadow: 0;
+
+		background-color: #fff;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 10px 10px;
+
+		&:checked {
+			border: 1px solid #959595;
+			background-image: url(#{$url-img}/ico-check-darkgray.png);
+		}
+
+		+.label {
+			margin-left: 5px;
+		}
+	}
+
+	&[type=checkbox] {
+		border-radius: 0;
+		background-image: url(#{$url-img}/ico-check-lightgray.png);
+	}
+
+	&[type=radio] {
+		border-radius: 50%;
+		border-color: #d9d9d9;
+		background-image: url(#{$url-img}/ico-check-gray.png);
+	}
+
+	&.checkbox-circle {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		box-shadow: none;
+		background-image: url(#{$url-img}/ico-check-gray.png);
+		background-size: 15px 15px;
+
+		&:checked {
+			border-color: transparent;
+			background-color: $yellow;
+			background-image: url(#{$url-img}/ico-check-white.png);
+		}
+	}
+}
+
+.form-list {
+	// padding-bottom: 10px;
+	font-size: 12px;
+
+	.row {
+		position: relative;
+
+		+.row {
+			margin-top: 20px;
+		}
+	}
+
+	&.form-gap-sm {
+		.row {
+			+.row {
+				margin-top: 12px;
+			}
+		}
+	}
+
+	.req {
+		color: $orange;
+		vertical-align: middle;
+	}
+
+	.label {
+		color: #89888d;
+	}
+
+	.form-item {
+		display: block;
+
+		.form-control {
+			width: 100%;
+		}
+
+		.label {
+			display: block;
+		}
+	}
+
+	.form-item-datepicker {
+		display: inline-block;
+		margin: -5px 0 4px;
+
+		.label {
+			display: inline-block;
+			min-width: 80px;
+			padding-right: 10px;
+			white-space: nowrap;
+			vertical-align: middle;
+		}
+
+		.status-line {
+			position: absolute;
+			display: block;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 1px;
+			background-color: $border-base;
+		}
+
+		.form-control-datepicker {
+			width: 80px;
+			border-color: transparent;
+			background: none;
+			font-size: 13px;
+			vertical-align: middle;
+
+			&:focus {
+				~.status-line {
+					background-color: #000;
+				}
+			}
+		}
+	}
+}

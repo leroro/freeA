@@ -1,0 +1,183 @@
+// 페이지형 팝업
+.wrapper-popup {
+	.popup-header {
+		height: $popup-titlebar-height;
+		padding: 40px $spacing 0;
+	}
+
+	.title {
+		font-size: 24px;
+		font-weight: normal;
+		line-height: 1;
+
+		.logo {
+			display: block;
+			height: 10px;
+		}
+
+		.text {
+			display: block;
+			margin-top: 6px;
+		}
+	}
+
+	.btn-popup-close {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 15px;
+	}
+}
+
+// 모달
+.modal-open {
+	overflow: hidden;
+}
+
+$popup-title-height: 42px;
+$popup-mobile-title-height: $popup-title-height;
+
+.modal-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.dimed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(#000, 0.7);
+	}
+
+	.popup-inner {
+		position: relative;
+		z-index: 1100;
+		background-color: #fff;
+
+		width: 320px;
+		height: 510px;
+		margin-top: 30px;
+		border-radius: 0;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		transition-duration: 0.3s;
+		transition-property: transform;
+	}
+
+	.popup-header {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: $popup-title-height;
+		// padding: 0 60px 0 15px;
+		line-height: $popup-title-height;
+		background-color: $primary;
+
+		// display: flex;
+		// align-items: center;
+		// flex: 0 0 auto;
+
+		color: $white;
+
+		.ico {
+			flex: 0 0 auto;
+		}
+
+		.popup-title {
+			// padding-top: 4px;
+			// line-height: $popup-title-height - 4px;
+			// margin-left: 10px;
+			overflow: hidden;
+			font-size: 19px;
+			font-weight: 500;
+
+			text-align: center;
+			text-overflow: ellipsis;
+		}
+	}
+
+	.popup-body {
+		flex: auto;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		padding: 15px 20px;
+	}
+
+	.popup-footer {
+		flex: 0 0 auto;
+		padding: 0 20px 15px;
+	}
+
+	.btn-close-popup {
+		@include ir;
+		position: absolute;
+		right: 0;
+		top: -40px;
+		width: 30px;
+		height: 30px;
+		background: url(#{$url-img}/ico-close-white.png) no-repeat center center;
+		background-size: 30px 30px;
+		overflow: hidden;
+	}
+
+	&.hide {
+		opacity: 0;
+		visibility: hidden;
+		transition-duration: 0.3s;
+
+		.popup-inner {
+			transform: translateY(50px);
+		}
+	}
+
+	&.show {
+		opacity: 1;
+		visibility: visible;
+		transition-duration: 0.3s;
+
+		.popup-inner {
+			transform: translateY(0);
+		}
+	}
+
+	&.modal-sm {
+		.popup-inner {
+			width: 290px;
+			height: 280px;
+		}
+
+		.popup-header {
+			padding: 0 0 0 33px;
+		}
+
+		.popup-title {
+			font-weight: normal;
+		}
+
+		.popup-body {
+			padding: 10px 20px 0;
+		}
+
+		.popup-footer {
+			border-top: 1px solid #999;
+			margin: 0 20px;
+			text-align: right;
+
+			.btn {
+				padding: 13px 15px 15px;
+			}
+		}
+	}
+}

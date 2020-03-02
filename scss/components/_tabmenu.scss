@@ -1,0 +1,68 @@
+// 
+// Tabmenu
+// 
+
+.tab-list {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  li {
+    flex: 1 1 5em;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .main-tab-nav & {
+    background-color: #e4eaf8;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #8e97ac;
+    font-weight: 500;
+
+    li {
+      &.on {
+        a {
+          color: #000;
+          border: 2px solid #494949;
+          border-radius: 10px;
+          background-color: #fff;
+        }
+
+        .count {
+          color: $orange;
+        }
+      }
+    }
+
+    a {
+      height: 47px;
+    }
+  }
+
+  .sub-tab-nav & {
+    border-bottom: 1px solid $border-base;
+    font-size: 12px;
+
+    a {
+      height: 34px;
+      padding-top: 2px;
+      border-bottom: 2px solid transparent;
+    }
+
+    li {
+      &.on {
+        a {
+          font-weight: bold;
+          color: #000;
+          border-color: #000;
+        }
+      }
+    }
+  }
+}

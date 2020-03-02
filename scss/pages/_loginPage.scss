@@ -1,0 +1,116 @@
+// 로그인
+.wrapper-login {
+  height: 100vh;
+  padding: 0 35px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+
+  .logo {
+    height: 37px;
+  }
+
+  .text {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+.login-body {
+  margin-top: 70px;
+  color: #555;
+  font-size: 15px;
+
+  .form-item {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+
+    >.ico {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      margin-top: -10px;
+    }
+
+    .btn-view {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 52px;
+      height: 52px;
+
+      &.on {
+        .ico-view {
+          background-image: url(#{$url-img}/ico-view-on.png);
+        }
+      }
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    height: 52px;
+    border-color: transparent;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 13px 15px 13px 50px;
+    line-height: 24px;
+
+    &::-webkit-input-placeholder {
+      color: #999;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: #999;
+      opacity: 1;
+    }
+
+    &.form-control-password {
+      padding-right: 50px;
+    }
+  }
+
+  .btn-group-flex {
+    margin-top: 35px;
+  }
+
+  .help {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 13px;
+  }
+}
+
+.login-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+
+  .logo {
+    height: 13px;
+    vertical-align: top;
+  }
+
+  .address {
+    font-size: 7px;
+    color: #848484;
+    font-style: normal;
+  }
+}

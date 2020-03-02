@@ -1,0 +1,121 @@
+/* default */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	font-size: 625%;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	position: relative;
+	min-width: $min-width;
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: 1.4;
+	color: $default;
+}
+
+header,
+section,
+article,
+aside,
+footer,
+nav {
+	display: block;
+}
+
+fieldset {
+	display: block;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dd {
+	margin: 0;
+}
+
+a,
+select,
+button,
+input,
+textarea {
+	font-family: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button,
+input[type=submit] {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: inherit;
+	cursor: pointer;
+	background: transparent;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.sr-only {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	margin: 0 !important;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+
+caption.sr-only {
+	position: static;
+	width: auto;
+	height: 0;
+}

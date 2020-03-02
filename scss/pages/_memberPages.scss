@@ -1,0 +1,83 @@
+// 회원가입, JUMP 계정연결, 멤버
+
+/* 멤버 */
+.member-list {
+  font-size: 13px;
+
+  li {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    line-height: 1.2;
+
+    +li {
+      margin-top: 5px;
+    }
+  }
+
+  .inner {
+    display: block;
+    padding: 15px 50px 15px 20px;
+  }
+
+  .name {
+    font-weight: normal;
+    vertical-align: middle;
+  }
+
+  .account {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #777;
+  }
+
+  .btn-delete {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+}
+
+.member-add-list {
+  margin-top: -5px;
+  font-size: 13px;
+
+  li {
+    margin-top: 15px;
+    position: relative;
+    padding: 0 4px 15px;
+    line-height: 1.2;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .type {
+    position: relative;
+    color: #ff8400;
+    vertical-align: middle;
+
+    &:after {
+      content: '';
+      width: 1px;
+      height: 11px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: -2px 4px 0 7px;
+      background-color: #b9b9b9;
+    }
+  }
+
+  .name {
+    font-weight: normal;
+    vertical-align: middle;
+  }
+
+  .account {
+    display: block;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #999;
+  }
+}
