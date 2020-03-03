@@ -1,12 +1,3 @@
-// 소셜댓글
-(function () { // DON'T EDIT BELOW THIS LINE
-	var d = document,
-		s = d.createElement('script');
-	s.src = 'https://freea.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-})();
-
 // 탭메뉴
 function tabListSetting() {
 	$('.tab-list .on a').each(function () {
