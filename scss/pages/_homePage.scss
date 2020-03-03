@@ -29,6 +29,7 @@
     a {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 12px $spacing;
 
       .lose {
@@ -40,10 +41,19 @@
         font-weight: 500;
         color: $red;
       }
+
+      .fa-chevron-right {
+        opacity: .5;
+        transition-duration: .2s;
+      }
     }
 
     &.on {
       font-weight: bold;
+
+      .fa-chevron-right {
+        transform: rotate(90deg);
+      }
 
       +dd {
         display: block;

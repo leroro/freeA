@@ -1591,6 +1591,9 @@ caption.sr-only {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 12px 20px;
 }
 
@@ -1604,8 +1607,19 @@ caption.sr-only {
   color: #ff0028;
 }
 
+.log-list dt a .fa-chevron-right {
+  opacity: .5;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
 .log-list dt.on {
   font-weight: bold;
+}
+
+.log-list dt.on .fa-chevron-right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .log-list dt.on + dd {
