@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="format-detection" content="telephone=no">
-	<title>전쟁 | 자유동맹 | 엠파이어&amp;퍼즐</title>
+	<title>타이탄 | 자유동맹 | 엠파이어&amp;퍼즐</title>
 	<meta name="keywords" content="자유동맹, 자유동맹엠퍼, 엠파이어퍼즐, FreeA, 우두머리앙코">
 	<meta name="description" content="자유동맹엠퍼">
 	<meta property="og:type" content="website">
@@ -16,60 +16,28 @@
 	<meta property="og:url" content="bit.ly/2VBkByZ">
 	<meta property="og:site_name" content="자유동맹엠퍼">
 	<link href="assets/images/favicon.png" rel="shortcut icon">
+	<link href="assets/css/billboard.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
-		<header id="titlebar">
-			<div class="container">
-				<h1 class="title">자유동맹 <small>bit.ly/2VBkByZ</small></h1>
-				<img src="assets/images/logo.png" alt="엠파이어&amp;퍼즐" class="logo">
-			</div>
-		</header>
+		<header id="titlebar"></header>
 		<article id="content">
 			<div class="container">
-				<h2 class="sr-only">전쟁</h2>
+				<h2 class="title1">전쟁통계</h2>
 				<nav class="main-tab-nav">
 					<ul class="tab-list">
-						<li class="on">
-							<a href="#tab-rule">전쟁 규정</a>
-						</li>
-						<li>
-							<a href="#tab-log">로그 분석</a>
-						</li>
+						<li class="on"><a href="#tab-m2">2020.02</a></li>
+						<li><a href="#tab-m1">2020.01</a></li>
 					</ul>
 				</nav>
-				<div class="tab-content" id="tab-rule">
-					<h3 class="title2">규정</h3>
-					<ul class="list-dot">
-						<li>전쟁 깃 연속 2회 또는 한달 3회 이상 남기는 자 추방됩니다.</li>
-						<li>전쟁에서 남긴 깃은 열심히 싸운 분들께 재미를 크게 반감시키는 요소가 될 수 있습니다.</li>
-						<li>단, 개인사정이 있을 경우 동맹챗에 소통시 추방에서 제외합니다.</li>
-					</ul>
-					<h3 class="title2">공략 가이드</h3>
-					<ul class="list-dot">
-						<li>
-							가급적 공지사항에 안내된 총공격 시간을 준수합니다.<br>
-							사정상 총공시간에 참여가 어려운 경우, 동맹챗창에 말씀해 주시고 먼저 틈틈이 깃을 사용해 주세요.
-						</li>
-						<li>
-							투력이 너무 차이나는 상대에게 깃을 낭비하지 말아주세요!<br>
-							고투력 센터 공략 + 저투력 설거지(남은영웅 처치) 협공을 기본 전략으로 합니다.
-						</li>
-						<li>
-							전쟁 참여시 무조건 돌진하지 마시고, 동맹챗을 훑어봐 주세요!<br>
-							조금 기다렸다가 함께 협공하는 재미를 누리시기 바랍니다.
-						</li>
-						<li>
-							유용한 팁&amp;정보는 leroro23@gmail.com 로 제보해 주세요.
-						</li>
-					</ul>
-				</div>
-				<div class="tab-content" id="tab-log">
-					<p class="text-right">자료제공 : Libera</p>
+				<div class="tab-content" id="tab-m2">
+					<div class="chart-area">
+						<div id="chart2"></div>
+					</div>
 					<dl class="log-list">
-						<dt class="on">
+						<dt>
 							<a href="#">
 								<span class="date">2020.02.27</span>
 								<span class="lose">패배</span>
@@ -228,56 +196,93 @@
 							</ul>
 						</dd>
 					</dl>
+					<p class="text-right mt-2">자료제공 : Libera</p>
+				</div>
+				<div class="tab-content" id="tab-m1">
+					<div class="text-center pt-5">
+						<i class="fa fa-inbox fa-5x text-lightgray"></i>
+						<p class="mt-3">
+							준비중 입니다.<br>
+							베라님 자료주세욥
+						</p>
+					</div>
 				</div>
 			</div>
 		</article>
-		<div id="tabbar">
-			<ul class="container">
-				<li>
-					<a href="index.html">
-						<i class="fas fa-fw fa-check"></i>
-						<span class="text">수칙</span>
-					</a>
-				</li>
-				<li>
-					<a href="titan.html">
-						<i class="fas fa-fw fa-skull"></i>
-						<span class="text">타이탄</span>
-					</a>
-				</li>
-				<li class="on">
-					<a href="war.html">
-						<i class="fas fa-fw fa-shield-alt"></i>
-						<span class="text">전쟁</span>
-					</a>
-				</li>
-				<li>
-					<a href="info.html">
-						<i class="fas fa-fw fa-link"></i>
-						<span class="text">정보</span>
-					</a>
-				</li>
-				<li>
-					<a href="history.html">
-						<i class="fas fa-fw fa-history"></i>
-						<span class="text">역사</span>
-					</a>
-				</li>
-			</ul>
-		</div>
+		<div id="tabbar"></div>
 	</div>
 
 	<!-- JavaScript -->
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/ui-layout-setting.js"></script>
 
 	<!-- 공통 UI 컴포넌트 -->
 	<script src="assets/js/ui-common.js"></script>
-	<script>
-		// 페이지 개별 스크립트
 
-		$('.log-list dt a').click(function (e) {
-			e.preventDefault();
-			$(this).parent('dt').toggleClass('on');
+	<script src="assets/js/d3.v5.min.js"></script>
+	<script src="assets/js/billboard.min.js"></script>
+	<script>
+		var chart1 = bb.generate({
+			bindto: "#chart2",
+			size: {
+				height: 240
+			},
+			data: {
+				type: "line",
+				colors: {
+					'아군 점수': "#ff0066",
+					'적군 점수': "#666",
+					'아군 남긴 깃': "#ed9abb",
+					'적군 남긴 깃': "#ddd",
+				},
+				x: "x",
+				columns: [
+					['x', '2020-02-02', '2020-02-05', '2020-02-09', '2020-02-13', '2020-02-17', '2020-02-24', '2020-02-27'],
+					['아군 점수', 3890, 4476, 4565, 4091, 3682, 4471, 3877],
+					['적군 점수', 3036, 3643, 4239, 4082, 4402, 3646, 3953],
+					['아군 남긴 깃', 9, 7, 11, 14, 16, 15, 4],
+					['적군 남긴 깃', 32, 1, 14, 9, 17, 12, 6],
+				],
+				types: {
+					'아군 남긴 깃': 'bar',
+					'적군 남긴 깃': 'bar'
+				},
+				axes: {
+					'아군 점수': 'y',
+					'적군 점수': 'y',
+					'아군 남긴 깃': 'y2',
+					'적군 남긴 깃': 'y2',
+				}
+			},
+			axis: {
+				x: {
+					type: "timeseries",
+					tick: {
+						format: "%m.%d"
+					}
+				},
+				y: {
+					tick: {
+						culling: {
+							max: 3
+						}
+					}
+				},
+				y2: {
+					show: true,
+					tick: {
+						culling: {
+							max: 3
+						}
+					}
+				}
+			},
+			bar: {
+				width: {
+					ratio: 0.9,
+					max: 10
+				}
+			},
 		});
 	</script>
 </body>

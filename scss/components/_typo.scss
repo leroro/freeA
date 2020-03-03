@@ -17,27 +17,21 @@
 
 // 타이틀
 .title1 {
-	margin: 15px 0 10px;
+	margin-bottom: 15px;
 	color: $primary;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
-	line-height: 1;
-
-	+.title2,
-	&:first-child {
-		margin-top: 0;
-	}
+	text-align: center;
 }
 
 .title2 {
-	margin: 15px 0 5px;
+	margin: 20px 0 10px;
 	color: #000;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 500;
-	line-height: 30px;
 
 	&:first-child {
-		margin-top: 0;
+		margin-top: -5px;
 	}
 }
 

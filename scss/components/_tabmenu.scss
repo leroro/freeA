@@ -22,7 +22,6 @@
     background-color: #e4eaf8;
     border-radius: 10px;
     font-size: 16px;
-    margin-bottom: 10px;
     color: #8e97ac;
     font-weight: 500;
 
@@ -48,24 +47,28 @@
 
   .sub-tab-nav & {
     border-bottom: 1px solid $border-base;
-    font-size: 12px;
+    font-size: 16px;
 
     a {
-      height: 34px;
-      padding-top: 2px;
+      height: 40px;
+      margin-bottom: -1px;
       border-bottom: 2px solid transparent;
     }
 
     li {
       &.on {
         a {
-          font-weight: bold;
+          font-weight: 500;
           color: #000;
           border-color: #000;
         }
       }
     }
   }
+}
+
+.main-tab-nav {
+  margin-bottom: 15px;
 }
 
 .tab-content {

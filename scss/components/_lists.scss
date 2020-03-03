@@ -45,6 +45,10 @@
 			height: .04rem;
 			border-radius: 50%;
 			background-color: #a4abb7;
+
+			.box & {
+				background-color: #fff;
+			}
 		}
 	}
 }

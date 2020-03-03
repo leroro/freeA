@@ -1070,7 +1070,7 @@ caption.sr-only {
 }
 
 .text-lightgray {
-  color: #f2f2f2 !important;
+  color: #ccc !important;
 }
 
 .text-white {
@@ -1118,7 +1118,7 @@ caption.sr-only {
 }
 
 .bg-lightgray {
-  background-color: #f2f2f2 !important;
+  background-color: #ccc !important;
   color: #fff;
 }
 
@@ -1187,7 +1187,7 @@ caption.sr-only {
 }
 
 .lightgray {
-  background-color: #f2f2f2 !important;
+  background-color: #ccc !important;
   color: #000;
 }
 
@@ -1205,27 +1205,22 @@ caption.sr-only {
 }
 
 .title1 {
-  margin: 15px 0 10px;
+  margin-bottom: 15px;
   color: #5277ca;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 1;
-}
-
-.title1 + .title2, .title1:first-child {
-  margin-top: 0;
+  text-align: center;
 }
 
 .title2 {
-  margin: 15px 0 5px;
+  margin: 20px 0 10px;
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 30px;
 }
 
 .title2:first-child {
-  margin-top: 0;
+  margin-top: -5px;
 }
 
 .text-xs {
@@ -1291,6 +1286,10 @@ caption.sr-only {
   height: .04rem;
   border-radius: 50%;
   background-color: #a4abb7;
+}
+
+.box .list-dot > li:before {
+  background-color: #fff;
 }
 
 .list-hyphen > li:before {
@@ -1385,7 +1384,6 @@ caption.sr-only {
   background-color: #e4eaf8;
   border-radius: 10px;
   font-size: 16px;
-  margin-bottom: 10px;
   color: #8e97ac;
   font-weight: 500;
 }
@@ -1407,19 +1405,23 @@ caption.sr-only {
 
 .sub-tab-nav .tab-list {
   border-bottom: 1px solid #d9d9d9;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .sub-tab-nav .tab-list a {
-  height: 34px;
-  padding-top: 2px;
+  height: 40px;
+  margin-bottom: -1px;
   border-bottom: 2px solid transparent;
 }
 
 .sub-tab-nav .tab-list li.on a {
-  font-weight: bold;
+  font-weight: 500;
   color: #000;
   border-color: #000;
+}
+
+.main-tab-nav {
+  margin-bottom: 15px;
 }
 
 .tab-content {
@@ -1469,12 +1471,15 @@ caption.sr-only {
   padding-left: 25px;
   background: url(../images/favicon.png) no-repeat left 3px;
   background-size: 20px auto;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 #titlebar .title small {
-  font-size: 14px;
+  margin-left: 4px;
+  font-size: 13px;
+  opacity: .8;
+  font-weight: normal;
 }
 
 #titlebar .btn {
@@ -1579,11 +1584,11 @@ caption.sr-only {
 
 .log-list {
   margin: 10px -20px 0;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
 }
 
 .log-list dt {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
 
 .log-list dt a {
@@ -1620,7 +1625,7 @@ caption.sr-only {
   line-height: 1.5;
   font-size: 13px;
   padding: 15px 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
 
 @media (min-width: 768px) {
@@ -1634,5 +1639,9 @@ caption.sr-only {
   border-radius: 5px;
   color: #fff;
   padding: 12px 15px;
+}
+
+.chart-area {
+  margin: 15px -20px;
 }
 /*# sourceMappingURL=style.css.map */

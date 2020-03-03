@@ -27,11 +27,14 @@
     padding-left: 25px;
     background: url(#{$url-img}/favicon.png) no-repeat left 3px;
     background-size: 20px auto;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
 
     small {
-      font-size: 14px;
+      margin-left: 4px;
+      font-size: 13px;
+      opacity: .8;
+      font-weight: normal;
     }
   }
 
