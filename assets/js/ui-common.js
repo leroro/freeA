@@ -1,12 +1,3 @@
-function copyToClipboard(element) {
-	var $temp = $("<input>");
-	$("body").append($temp);
-	$temp.val('http://' + $(element).text().replace(/	/g, '').replace(/(^\s*)|(\s*$)/gi, '')).select();
-	document.execCommand("copy");
-	$temp.remove();
-	alert("📝URL이 복사되었습니다. 인터넷 주소창에 붙여 넣으세요.");
-}
-
 // 탭메뉴
 function tabListSetting() {
 	$('.tab-list .on a').each(function () {
@@ -16,6 +7,26 @@ function tabListSetting() {
 		}
 	});
 }
+
+// 구글 통계
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+	dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'UA-159578858-1');
+
+// URL 복사
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val('http://' + $(element).text().replace(/	/g, '').replace(/(^\s*)|(\s*$)/gi, '')).select();
+	document.execCommand("copy");
+	$temp.remove();
+	alert("📝URL이 복사되었습니다. 인터넷 주소창에 붙여 넣으세요.");
+}
+
 tabListSetting();
 $(document).on('click', '.tab-list a', function (e) {
 	var tg = $(this).attr('href');
