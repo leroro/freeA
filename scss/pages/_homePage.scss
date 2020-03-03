@@ -85,7 +85,7 @@
 .chart-area {
   border-top: 1px solid #eee;
   margin: 0 -1 * $spacing;
-  padding: 15px 0 0;
+  padding: 15px 0 6px;
 
   @include media-breakpoint-up(md) {
     border: 1px solid #eee;
