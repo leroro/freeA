@@ -5,7 +5,7 @@
 	Back-End 개발시 이 파일을 반드시 삭제해 주세요 :)
 */
 $(function () {
-	$('#titlebar').load('_inc-titlebar.html', function () {});
+	$('#titlebar').load('inc-titlebar.html', function () {});
 	// $('#gnb').load('_inc-gnb.html', function () {});
 	// 	if ($('#header').hasClass('extend-open')) {
 	// 		$('.extend-container').show();
@@ -14,7 +14,7 @@ $(function () {
 	// $('#allmenu').load('_inc-allmenu.html', function () {
 	// 	// if ($.isFunction(window.snbSetting)) snbSetting();
 	// });
-	$('#tabbar').load('_inc-tabbar.html', function () {
+	$('#tabbar').load('inc-tabbar.html', function () {
 		var thisfilefullname = document.URL.substring(document.URL.lastIndexOf("/") + 1, document.URL.length);
 		$('#tabbar a').each(function () {
 			if ($(this).attr('href') == thisfilefullname) {
