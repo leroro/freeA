@@ -1555,32 +1555,24 @@ caption.sr-only {
   font-weight: 500;
 }
 
-.history-list dt {
-  font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 5px;
+.chart-area {
+  border-top: 1px solid #eee;
+  margin: 0 -20px;
+  padding: 15px 0 0;
 }
 
-.history-list dt:first-child {
-  margin-top: 0;
+@media (min-width: 768px) {
+  .chart-area {
+    border: 1px solid #eee;
+    margin: 10px 0 0;
+    padding: 15px 0;
+  }
 }
 
-.history-list dd {
-  position: relative;
-  padding-left: .12rem;
-}
-
-.history-list dd:before {
-  content: '';
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: .04rem;
-  height: .04rem;
-  border-radius: 50%;
-  background-color: #a4abb7;
+.date-src {
+  text-align: right;
+  margin: 10px 0;
+  font-size: 12px;
 }
 
 .log-list {
@@ -1642,18 +1634,32 @@ caption.sr-only {
   padding: 12px 15px;
 }
 
-.chart-area {
-  border-top: 1px solid #eee;
-  margin: 0 -20px;
-  padding: 15px 0 6px;
+.history-list dt {
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-@media (min-width: 768px) {
-  .chart-area {
-    border: 1px solid #eee;
-    margin: 10px 0 0;
-    padding: 15px 0;
-  }
+.history-list dt:first-child {
+  margin-top: 0;
+}
+
+.history-list dd {
+  position: relative;
+  padding-left: .12rem;
+}
+
+.history-list dd:before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: .04rem;
+  height: .04rem;
+  border-radius: 50%;
+  background-color: #a4abb7;
 }
 
 .member-list {

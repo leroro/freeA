@@ -1,32 +1,22 @@
 // 메인
-.history-list {
-  dt {
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 5px;
 
-    &:first-child {
-      margin-top: 0;
-    }
+// 전쟁통계
+.chart-area {
+  border-top: 1px solid #eee;
+  margin: 0 -1 * $spacing;
+  padding: 15px 0 0;
+
+  @include media-breakpoint-up(md) {
+    border: 1px solid #eee;
+    margin: 10px 0 0;
+    padding: 15px 0;
   }
+}
 
-  dd {
-    position: relative;
-    padding-left: .12rem;
-
-    &:before {
-      content: '';
-      box-sizing: border-box;
-      position: absolute;
-      left: 0;
-
-      top: 6px;
-      width: .04rem;
-      height: .04rem;
-      border-radius: 50%;
-      background-color: #a4abb7;
-    }
-  }
+.date-src {
+  text-align: right;
+  margin: 10px 0;
+  font-size: 12px;
 }
 
 .log-list {
@@ -82,15 +72,35 @@
   padding: 12px 15px;
 }
 
-.chart-area {
-  border-top: 1px solid #eee;
-  margin: 0 -1 * $spacing;
-  padding: 15px 0 6px;
 
-  @include media-breakpoint-up(md) {
-    border: 1px solid #eee;
-    margin: 10px 0 0;
-    padding: 15px 0;
+// 소개
+.history-list {
+  dt {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    position: relative;
+    padding-left: .12rem;
+
+    &:before {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+
+      top: 6px;
+      width: .04rem;
+      height: .04rem;
+      border-radius: 50%;
+      background-color: #a4abb7;
+    }
   }
 }
 
