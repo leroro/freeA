@@ -72,7 +72,6 @@
   padding: 12px 15px;
 }
 
-
 // 소개
 .history-list {
   dt {
@@ -114,4 +113,9 @@
     border: 4px solid #152d42;
     margin: -2px;
   }
+}
+
+// 소셜댓글
+#disqus_thread {
+  margin-top: 30px;
 }
