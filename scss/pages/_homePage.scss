@@ -83,5 +83,7 @@
 }
 
 .chart-area {
-  margin: 15px -1 * $spacing;
+  border-top: 1px solid #eee;
+  margin: 0 -1 * $spacing;
+  padding: 15px 0 0;
 }
