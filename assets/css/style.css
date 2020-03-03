@@ -44,6 +44,7 @@ body {
   font-size: 0.14rem;
   line-height: 1.4;
   color: #000;
+  overflow-y: scroll;
 }
 
 header,
@@ -1583,7 +1584,7 @@ caption.sr-only {
 }
 
 .log-list {
-  margin: 10px -20px 0;
+  margin: 0 -20px;
   border-top: 1px solid #eee;
 }
 
@@ -1645,5 +1646,25 @@ caption.sr-only {
   border-top: 1px solid #eee;
   margin: 0 -20px;
   padding: 15px 0 0;
+}
+
+@media (min-width: 768px) {
+  .chart-area {
+    border: 1px solid #eee;
+    margin: 10px 0 0;
+    padding: 15px 0;
+  }
+}
+
+.member-list {
+  display: inline-block;
+  padding: 2px;
+}
+
+.member-list img {
+  float: left;
+  width: 245px;
+  border: 4px solid #152d42;
+  margin: -2px;
 }
 /*# sourceMappingURL=style.css.map */
