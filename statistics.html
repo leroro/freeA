@@ -295,13 +295,6 @@
 					'아군 남긴 깃': 'y2',
 					'적군 남긴 깃': 'y2',
 				},
-				to: "2020-02-01",
-				done: function () {
-					chart.flow({
-						length: 2,
-						duration: 1500
-					});
-				}
 			},
 			axis: {
 				x: {
@@ -311,7 +304,7 @@
 					}
 				},
 				y: {
-					// max: 5500,
+					max: 5000,
 					min: 2800,
 					tick: {
 						culling: {
