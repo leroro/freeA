@@ -1,0 +1,48 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+
+  caption {
+    text-align: left;
+  }
+
+  thead {
+    word-break: keep-all;
+  }
+
+  thead~tbody,
+  thead~tfoot {
+    text-align: center;
+  }
+}
+
+.table-data {
+  border-collapse: collapse;
+  border-top: 2px solid $default;
+
+  th,
+  td {
+    height: .40rem;
+    padding: .09rem .15rem;
+    border-bottom: 1px solid $border-light;
+    border-right: 1px solid $border-light;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  thead {
+    th {
+      background-color: $bg-lightgray;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    th {
+      font-weight: normal;
+      background-color: $bg-lightgray;
+    }
+  }
+}
