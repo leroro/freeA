@@ -30,15 +30,16 @@
 				<h2 class="title1">전쟁통계</h2>
 				<nav class="main-tab-nav">
 					<ul class="tab-list">
-						<li class="on"><a href="#tab-m2">2020.02</a></li>
-						<li><a href="#tab-m1">2020.01</a></li>
+						<li class="on"><a href="#tab-2002">2020.02</a></li>
+						<li><a href="#tab-2001">2020.01</a></li>
+						<li><a href="#tab-1912">2019.12</a></li>
 					</ul>
 				</nav>
-				<div class="tab-content" id="tab-m2">
-					<div class="chart-area">
-						<div id="chart2"></div>
-					</div>
-					<p class="date-src">자료제공 : Libera</p>
+				<div class="chart-area">
+					<div id="chart"></div>
+				</div>
+				<p class="date-src">자료제공 : Libera</p>
+				<div class="tab-content" id="tab-2002">
 					<dl class="log-list">
 						<dt>
 							<a href="#">
@@ -235,12 +236,19 @@
 						</dd>
 					</dl>
 				</div>
-				<div class="tab-content" id="tab-m1">
+				<div class="tab-content" id="tab-2001">
 					<div class="text-center pt-5">
 						<i class="fa fa-inbox fa-5x text-lightgray"></i>
 						<p class="mt-3">
-							준비중 입니다.<br>
-							베라님 자료주세욥
+							상세 로그는 준비중 입니다
+						</p>
+					</div>
+				</div>
+				<div class="tab-content" id="tab-1912">
+					<div class="text-center pt-5">
+						<i class="fa fa-inbox fa-5x text-lightgray"></i>
+						<p class="mt-3">
+							상세 로그는 준비중 입니다
 						</p>
 					</div>
 				</div>
@@ -259,27 +267,24 @@
 	<script src="assets/js/d3.v5.min.js"></script>
 	<script src="assets/js/billboard.min.js"></script>
 	<script>
-		var chart1 = bb.generate({
-			bindto: "#chart2",
+		var activeTab = $('.tab-list li.on a').attr('href');
+		var activeFileName = activeTab.substr(activeTab.length - 4, 4);
+		var activeFileUrl = 'data/war' + activeFileName + '.csv';
+		var chart = bb.generate({
+			bindto: "#chart",
 			size: {
 				height: 240
 			},
 			data: {
+				url: activeFileUrl,
 				type: "line",
 				colors: {
 					'아군 점수': "#ff0066",
 					'적군 점수': "#666",
-					'아군 남긴 깃': "#ed9abb",
+					'아군 남긴 깃': "#f8c9dc",
 					'적군 남긴 깃': "#ddd",
 				},
 				x: "x",
-				columns: [
-					['x', '2020-02-02', '2020-02-05', '2020-02-09', '2020-02-13', '2020-02-17', '2020-02-24', '2020-02-27'],
-					['아군 점수', 3890, 4476, 4565, 4091, 3682, 4471, 3877],
-					['적군 점수', 3036, 3643, 4239, 4082, 4402, 3646, 3953],
-					['아군 남긴 깃', 9, 7, 11, 14, 16, 15, 4],
-					['적군 남긴 깃', 32, 1, 14, 9, 17, 12, 6],
-				],
 				types: {
 					'아군 남긴 깃': 'bar',
 					'적군 남긴 깃': 'bar'
@@ -289,6 +294,13 @@
 					'적군 점수': 'y',
 					'아군 남긴 깃': 'y2',
 					'적군 남긴 깃': 'y2',
+				},
+				to: "2020-02-01",
+				done: function () {
+					chart.flow({
+						length: 2,
+						duration: 1500
+					});
 				}
 			},
 			axis: {
@@ -299,6 +311,8 @@
 					}
 				},
 				y: {
+					// max: 5500,
+					min: 2800,
 					tick: {
 						culling: {
 							max: 3
@@ -317,9 +331,18 @@
 			bar: {
 				width: {
 					ratio: 0.9,
-					max: 10
+					max: 4
 				}
 			},
+		});
+
+		$('.tab-list a').click(function () {
+			var tabId = $(this).attr('href');
+			var fileName = tabId.substr(tabId.length - 4, 4);
+			var fileUrl = 'data/war' + fileName + '.csv';
+			chart.load({
+				url: fileUrl,
+			});
 		});
 	</script>
 </body>
