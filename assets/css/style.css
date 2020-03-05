@@ -1046,6 +1046,10 @@ caption.sr-only {
   color: #ff7c88 !important;
 }
 
+.text-red {
+  color: #ff0066 !important;
+}
+
 .text-blue {
   color: #5277ca !important;
 }
@@ -1085,6 +1089,11 @@ caption.sr-only {
 
 .bg-secondary {
   background-color: #ff7c88 !important;
+  color: #fff;
+}
+
+.bg-red {
+  background-color: #ff0066 !important;
   color: #fff;
 }
 
@@ -1154,6 +1163,11 @@ caption.sr-only {
 
 .secondary {
   background-color: #ff7c88 !important;
+  color: #000;
+}
+
+.red {
+  background-color: #ff0066 !important;
   color: #000;
 }
 
@@ -1647,16 +1661,16 @@ caption.sr-only {
   font-size: 12px;
 }
 
-.log-list {
+.toggle-list {
   margin: 0 -20px;
   border-top: 1px solid #eee;
 }
 
-.log-list dt {
+.toggle-list dt {
   border-bottom: 1px solid #eee;
 }
 
-.log-list dt a {
+.toggle-list dt a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1669,36 +1683,36 @@ caption.sr-only {
   padding: 12px 20px;
 }
 
-.log-list dt a .lose {
+.toggle-list dt a .lose {
   font-weight: 500;
   color: #5277ca;
 }
 
-.log-list dt a .win {
+.toggle-list dt a .win {
   font-weight: 500;
-  color: #ff0028;
+  color: #ff0066;
 }
 
-.log-list dt a .fa-chevron-right {
+.toggle-list dt a .fa-chevron-right {
   opacity: .5;
   -webkit-transition-duration: .2s;
           transition-duration: .2s;
 }
 
-.log-list dt.on {
+.toggle-list dt.on {
   font-weight: bold;
 }
 
-.log-list dt.on .fa-chevron-right {
+.toggle-list dt.on .fa-chevron-right {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.log-list dt.on + dd {
+.toggle-list dt.on + dd {
   display: block;
 }
 
-.log-list > dd {
+.toggle-list > dd {
   display: none;
   background-color: rgba(82, 119, 202, 0.05);
   line-height: 1.5;
@@ -1708,7 +1722,7 @@ caption.sr-only {
 }
 
 @media (min-width: 768px) {
-  .log-list {
+  .toggle-list {
     margin: 10px 0;
   }
 }

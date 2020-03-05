@@ -9,7 +9,7 @@ $responsive: true;
 $primary: #5277ca !default;
 $secondary: #ff7c88 !default;
 
-$red: #ff0028 !default;
+$red: #ff0066 !default;
 $orange: #ff6600 !default;
 $yellow: #f4ad32 !default;
 // $pink: #ff0066 !default;
@@ -31,6 +31,7 @@ $white: #fff !default;
 $colors: () !default;
 $colors: map-merge(("primary": $primary,
 		"secondary": $secondary,
+		"red": $red,
 		"blue": $blue,
 		"orange": $orange,
 		"yellow" : $yellow,
