@@ -19,22 +19,23 @@
 	text-align: center;
 }
 
-@mixin ico($name, $w:25px, $h:25px) {
+@mixin ico($name, $w:20px, $h:20px) {
 	.ico-#{$name} {
 		width: $w;
 		height: $h;
 		line-height: $h;
-		background-image: url('#{$url-img}/ico-#{$name}.png');
+		background-image: url('#{$url-img}/icons/#{$name}.png');
+		background-size: 16px auto;
 	}
 }
 
-@mixin ico2($name, $w:25px, $h:25px, $w-m:$w, $h-m:$h) {
+@mixin ico2($name, $w:20px, $h:20px, $w-m:$w, $h-m:$h) {
 	@include media-breakpoint-up(lg) {
 		.ico-#{$name} {
 			width: $w;
 			height: $h;
 			line-height: $h;
-			background-image: url('#{$url-img}/ico-#{$name}.png');
+			background-image: url('#{$url-img}/icons/#{$name}.png');
 		}
 	}
 
@@ -43,7 +44,7 @@
 			width: $w-m;
 			height: $h-m;
 			line-height: $h-m;
-			background-image: url('#{$url-img}/ico-#{$name}-m.png');
+			background-image: url('#{$url-img}/icons/#{$name}-m.png');
 		}
 	}
 }

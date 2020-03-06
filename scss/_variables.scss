@@ -7,6 +7,7 @@ $responsive: true;
 // 색상
 // 글꼴 및 범용
 $primary: #5277ca !default;
+$darkgprimary: darken($primary, 30%) !default;
 $secondary: #ff7c88 !default;
 
 $red: #ff0066 !default;
@@ -20,6 +21,11 @@ $blue: #5277ca !default;
 // $purple: #666699 !default;
 
 
+$lightred: #ff5a5a !default;
+$lightblue: #7ed2ff !default;
+$lightgreen: #89ff82 !default;
+$lightyellow: #ffff6c !default;
+$lightpurple: #c98aff !default;
 
 $default: #000 !default;
 $black: #000 !default;
@@ -31,12 +37,18 @@ $white: #fff !default;
 $colors: () !default;
 $colors: map-merge(("primary": $primary,
 		"secondary": $secondary,
+		"darkgprimary": $darkgprimary,
 		"red": $red,
 		"blue": $blue,
 		"orange": $orange,
 		"yellow" : $yellow,
 		"default": $default,
 		"black": $black,
+		"lightred": $lightred,
+		"lightblue": $lightblue,
+		"lightgreen": $lightgreen,
+		"lightyellow": $lightyellow,
+		"lightpurple": $lightpurple,
 		// "darkgray": $darkgray,
 		"gray": $gray,
 		"lightgray": $lightgray,

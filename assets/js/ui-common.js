@@ -46,7 +46,7 @@ $(document).on('click', '.tab-list a', function (e) {
 // 토글 목록
 $('.toggle-list dt a').click(function (e) {
 	e.preventDefault();
-	$(this).parent('dt').toggleClass('on');
+	$(this).parent('dt').toggleClass('on').siblings('dt').removeClass('on');
 });
 
 // 모달 레이어

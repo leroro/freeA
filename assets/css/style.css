@@ -1046,6 +1046,10 @@ caption.sr-only {
   color: #ff7c88 !important;
 }
 
+.text-darkgprimary {
+  color: #1f3464 !important;
+}
+
 .text-red {
   color: #ff0066 !important;
 }
@@ -1070,6 +1074,26 @@ caption.sr-only {
   color: #000 !important;
 }
 
+.text-lightred {
+  color: #ff5a5a !important;
+}
+
+.text-lightblue {
+  color: #7ed2ff !important;
+}
+
+.text-lightgreen {
+  color: #89ff82 !important;
+}
+
+.text-lightyellow {
+  color: #ffff6c !important;
+}
+
+.text-lightpurple {
+  color: #c98aff !important;
+}
+
 .text-gray {
   color: #777 !important;
 }
@@ -1089,6 +1113,11 @@ caption.sr-only {
 
 .bg-secondary {
   background-color: #ff7c88 !important;
+  color: #fff;
+}
+
+.bg-darkgprimary {
+  background-color: #1f3464 !important;
   color: #fff;
 }
 
@@ -1119,6 +1148,31 @@ caption.sr-only {
 
 .bg-black {
   background-color: #000 !important;
+  color: #fff;
+}
+
+.bg-lightred {
+  background-color: #ff5a5a !important;
+  color: #fff;
+}
+
+.bg-lightblue {
+  background-color: #7ed2ff !important;
+  color: #fff;
+}
+
+.bg-lightgreen {
+  background-color: #89ff82 !important;
+  color: #fff;
+}
+
+.bg-lightyellow {
+  background-color: #ffff6c !important;
+  color: #fff;
+}
+
+.bg-lightpurple {
+  background-color: #c98aff !important;
   color: #fff;
 }
 
@@ -1166,6 +1220,11 @@ caption.sr-only {
   color: #000;
 }
 
+.darkgprimary {
+  background-color: #1f3464 !important;
+  color: #000;
+}
+
 .red {
   background-color: #ff0066 !important;
   color: #000;
@@ -1193,6 +1252,31 @@ caption.sr-only {
 
 .black {
   background-color: #000 !important;
+  color: #000;
+}
+
+.lightred {
+  background-color: #ff5a5a !important;
+  color: #000;
+}
+
+.lightblue {
+  background-color: #7ed2ff !important;
+  color: #000;
+}
+
+.lightgreen {
+  background-color: #89ff82 !important;
+  color: #000;
+}
+
+.lightyellow {
+  background-color: #ffff6c !important;
+  color: #000;
+}
+
+.lightpurple {
+  background-color: #c98aff !important;
   color: #000;
 }
 
@@ -1267,6 +1351,546 @@ caption.sr-only {
 
 .text-xl {
   font-size: 0.18rem;
+}
+
+.ico {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  vertical-align: middle;
+  color: transparent;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ico-alien {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/alien.png");
+  background-size: 16px auto;
+}
+
+.ico-angry {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/angry.png");
+  background-size: 16px auto;
+}
+
+.ico-axe {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/axe.png");
+  background-size: 16px auto;
+}
+
+.ico-axes {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/axes.png");
+  background-size: 16px auto;
+}
+
+.ico-blush {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/blush.png");
+  background-size: 16px auto;
+}
+
+.ico-bunny {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/bunny.png");
+  background-size: 16px auto;
+}
+
+.ico-butterfly {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/butterfly.png");
+  background-size: 16px auto;
+}
+
+.ico-butterflyblue {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/butterflyblue.png");
+  background-size: 16px auto;
+}
+
+.ico-cake {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/cake.png");
+  background-size: 16px auto;
+}
+
+.ico-cat {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/cat.png");
+  background-size: 16px auto;
+}
+
+.ico-catgrey {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/catgrey.png");
+  background-size: 16px auto;
+}
+
+.ico-coffee {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/coffee.png");
+  background-size: 16px auto;
+}
+
+.ico-cool {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/cool.png");
+  background-size: 16px auto;
+}
+
+.ico-crying {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/crying.png");
+  background-size: 16px auto;
+}
+
+.ico-de {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/de.png");
+  background-size: 16px auto;
+}
+
+.ico-dog {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/dog.png");
+  background-size: 16px auto;
+}
+
+.ico-donut {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/donut.png");
+  background-size: 16px auto;
+}
+
+.ico-elementdark {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/elementdark.png");
+  background-size: 16px auto;
+}
+
+.ico-elementfire {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/elementfire.png");
+  background-size: 16px auto;
+}
+
+.ico-elementholy {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/elementholy.png");
+  background-size: 16px auto;
+}
+
+.ico-elementice {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/elementice.png");
+  background-size: 16px auto;
+}
+
+.ico-elementnature {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/elementnature.png");
+  background-size: 16px auto;
+}
+
+.ico-en {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/en.png");
+  background-size: 16px auto;
+}
+
+.ico-evil {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/evil.png");
+  background-size: 16px auto;
+}
+
+.ico-fire {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/fire.png");
+  background-size: 16px auto;
+}
+
+.ico-flower {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/flower.png");
+  background-size: 16px auto;
+}
+
+.ico-fox {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/fox.png");
+  background-size: 16px auto;
+}
+
+.ico-geek {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/geek.png");
+  background-size: 16px auto;
+}
+
+.ico-ghost {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/ghost.png");
+  background-size: 16px auto;
+}
+
+.ico-grin {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/grin.png");
+  background-size: 16px auto;
+}
+
+.ico-ham {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/ham.png");
+  background-size: 16px auto;
+}
+
+.ico-hammer {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/hammer.png");
+  background-size: 16px auto;
+}
+
+.ico-hankey {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/hankey.png");
+  background-size: 16px auto;
+}
+
+.ico-heart {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/heart.png");
+  background-size: 16px auto;
+}
+
+.ico-heartblue {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/heartblue.png");
+  background-size: 16px auto;
+}
+
+.ico-heartgreen {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/heartgreen.png");
+  background-size: 16px auto;
+}
+
+.ico-heartpurple {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/heartpurple.png");
+  background-size: 16px auto;
+}
+
+.ico-heartyellow {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/heartyellow.png");
+  background-size: 16px auto;
+}
+
+.ico-helmet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/helmet.png");
+  background-size: 16px auto;
+}
+
+.ico-horror {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/horror.png");
+  background-size: 16px auto;
+}
+
+.ico-kiss {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/kiss.png");
+  background-size: 16px auto;
+}
+
+.ico-lightning {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/lightning.png");
+  background-size: 16px auto;
+}
+
+.ico-lol {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/lol.png");
+  background-size: 16px auto;
+}
+
+.ico-love {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/love.png");
+  background-size: 16px auto;
+}
+
+.ico-mageblue {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/mageblue.png");
+  background-size: 16px auto;
+}
+
+.ico-magered {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/magered.png");
+  background-size: 16px auto;
+}
+
+.ico-monocle {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/monocle.png");
+  background-size: 16px auto;
+}
+
+.ico-palmtree {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/palmtree.png");
+  background-size: 16px auto;
+}
+
+.ico-pizza {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/pizza.png");
+  background-size: 16px auto;
+}
+
+.ico-richard {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/richard.png");
+  background-size: 16px auto;
+}
+
+.ico-rofl {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/rofl.png");
+  background-size: 16px auto;
+}
+
+.ico-rolleyes {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/rolleyes.png");
+  background-size: 16px auto;
+}
+
+.ico-sad {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/sad.png");
+  background-size: 16px auto;
+}
+
+.ico-skull {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/skull.png");
+  background-size: 16px auto;
+}
+
+.ico-smile {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/smile.png");
+  background-size: 16px auto;
+}
+
+.ico-splash {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/splash.png");
+  background-size: 16px auto;
+}
+
+.ico-staff {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/staff.png");
+  background-size: 16px auto;
+}
+
+.ico-star {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/star.png");
+  background-size: 16px auto;
+}
+
+.ico-sunflower {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/sunflower.png");
+  background-size: 16px auto;
+}
+
+.ico-sword {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/sword.png");
+  background-size: 16px auto;
+}
+
+.ico-swords {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/swords.png");
+  background-size: 16px auto;
+}
+
+.ico-teardrop {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/teardrop.png");
+  background-size: 16px auto;
+}
+
+.ico-think {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/think.png");
+  background-size: 16px auto;
+}
+
+.ico-thumbsdown {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/thumbsdown.png");
+  background-size: 16px auto;
+}
+
+.ico-thumbsup {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/thumbsup.png");
+  background-size: 16px auto;
+}
+
+.ico-tongue {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("../images/icons/tongue.png");
+  background-size: 16px auto;
 }
 
 .list-dot > li,
