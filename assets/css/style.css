@@ -2251,6 +2251,7 @@ caption.sr-only {
 }
 
 #tabbar a {
+  position: relative;
   display: block;
   padding: 14px 0 10px;
 }
@@ -2267,6 +2268,18 @@ caption.sr-only {
   width: 100%;
   margin-top: 3px;
   font-weight: 500;
+}
+
+#tabbar .badge {
+  top: 11px;
+  position: absolute;
+  background-color: #ff0066;
+  margin-left: 13px;
+  width: 6px;
+  height: 6px;
+  color: #ff0066;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .chart-area {

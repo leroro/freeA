@@ -36,6 +36,7 @@
   }
 
   a {
+    position: relative;
     display: block;
     padding: 14px 0 10px;
   }
@@ -52,5 +53,17 @@
     width: 100%;
     margin-top: 3px;
     font-weight: 500;
+  }
+
+  .badge {
+    top: 11px;
+    position: absolute;
+    background-color: $red;
+    margin-left: 13px;
+    width: 6px;
+    height: 6px;
+    color: $red;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
