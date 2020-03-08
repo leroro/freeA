@@ -38,8 +38,7 @@
 					<h3 class="sr-only">전쟁</h3>
 					<div class="box">
 						<ul class="list-dot">
-							<li>투올클을 기본으로 합니다.</li>
-							<li>가급적 게임 내 공지에 안내된 총공격 시간을 준수합니다.</li>
+							<li>총공격 시간을 준수하며, 투올클 합니다.</li>
 							<li>
 								전쟁이 시작되면 먼저 투력 3500이하 맛집(?)을 공략합니다.
 								이후 저투력이 부활하면 다시 저투력만 골라잡습니다.<br>
@@ -57,9 +56,9 @@
 					</div>
 					<nav class="sub-tab-nav mt-3 mb-3">
 						<ul class="tab-list">
-							<li class="on"><a href="#tab-time">공격시간</a></li>
-							<li><a href="#tab-low">중저투력자</a></li>
-							<li><a href="#tab-high">고투력자</a></li>
+							<li><a href="#tab-time">공격 팁</a></li>
+							<li><a href="#tab-role">투력별 역할</a></li>
+							<li class="on"><a href="#tab-setting">방덱 세팅</a></li>
 						</ul>
 					</nav>
 					<div class="tab-content" id="tab-time">
@@ -75,9 +74,47 @@
 								혹시 공격에 실패해서 다 못잡았더라도 <strong class="text-red">똑같은 상대를 여러번 공격하지 마세요.</strong><br>
 								다음 팀원을 위해 설거지를 남겨주세요 :)
 							</li>
+							<ul class="list-dot">
+								<li>
+									적군의 투력만 보고 돌진하지 마세요!<br>
+									적군의 영웅의 특수스킬을 먼저 확인하고, 상성과 특수스킬에 최적화 된 덱을 구성합니다.
+									버프형이 많다면 적군 해제캐를, 디버프형이 많다면 아군 해제캐를 챙겨갑니다.
+								</li>
+							</ul>
 						</ul>
 						<table class="table table-data mt-3">
+							<caption class="title3">새벽 타임 시작시</caption>
+							<colgroup>
+								<col style="width: 30%;">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>시작</th>
+									<td>당일 AM 3:10</td>
+								</tr>
+								<tr>
+									<th>1차 부활</th>
+									<td>당일 AM 09:10</td>
+								</tr>
+								<tr>
+									<th>2차 부활</th>
+									<td>당일 PM 05:10</td>
+								</tr>
+								<tr>
+									<th>총공</th>
+									<td>
+										<strong class="text-primary">당일 PM 08:00 ~</strong>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-data mt-3">
 							<caption class="title3">저녁 타임 시작시</caption>
+							<colgroup>
+								<col style="width: 30%;">
+								<col>
+							</colgroup>
 							<tbody>
 								<tr>
 									<th>시작</th>
@@ -100,8 +137,10 @@
 							</tbody>
 						</table>
 					</div>
-					<div class="tab-content" id="tab-low">
-						<h4 class="sr-only">중저투력자</h4>
+					<div class="tab-content" id="tab-role">
+						<h4 class="sr-only">전투력별 공격팁</h4>
+
+						<h5 class="title3 text-primary">중저투력으로 공격시</h5>
 						<ul class="list-dot">
 							<li>
 								빵굽지 않는 그대가 우리 팀을 승리로 이끌어 줍니다!<br>
@@ -113,9 +152,8 @@
 								설거지하면 보너스 점수 있는거 아시죠?
 							</li>
 						</ul>
-					</div>
-					<div class="tab-content" id="tab-high">
-						<h4 class="sr-only">고투력자</h4>
+
+						<h4 class="title3 text-primary">고투력으로 공격시</h4>
 						<ul class="list-dot">
 							<li>
 								총공시간에 고투력 적군의 센터 위주로 공략해 주세요!<br>
@@ -131,6 +169,112 @@
 								중저투력의 무의미한 깃낭비를 막아 팀 전체 점수가 확 올라갑니다.
 							</li>
 						</ul>
+					</div>
+					<div class="tab-content" id="tab-setting">
+						<h4 class="sr-only">방덱 세팅</h4>
+						<div class="box bg-darkgprimary text-center">
+							<div>
+								<i class="ico ico-elementdark"></i>
+								<span class="text-lightpurple">암흑 센터</span> +
+								<i class="ico ico-elementholy"></i>
+								<span class="text-lightyellow">신성 플랭크</span>
+							</div>
+						</div>
+						<p class="text-sm text-right mt-1">(2020년 4월부터 시행)</p>
+						<h5 class="title3 text-primary">센터 배치 가이드</h5>
+						<ul class="list-dot mt-2">
+							<li>필수 조건 : <i class="ico ico-elementdark"></i> <strong>암흑 속성</strong></li>
+							<li>
+								<strong class="text-red">방어도 및 HP가 높은 탱커형 영웅이 센터로 안정적</strong>입니다. 중투력 방어도 700 이상, 고투력 방어도 800 이상시 탱커로
+								봐도 무방합니다.
+							</li>
+							<li>
+								방어력이 높은 경우 타일을 버틸 수 있으므로 느림도 괜찮지만, 어중간하다면 보통/빠름이면 좋습니다.
+								또는 빠름 플랭크를 두어 보조할 수 있도록 합니다.
+							</li>
+						</ul>
+						<div class="box mt-2">
+							<ul class="list-dot">
+								<li>추천 4성 : 리가드(의상) > 리가드(일반) > 사이크리언 > 티부르투스</li>
+								<li>추천 5성 : 쿤첸, 대장늑대, 우르세나, 그림블, 에런</li>
+								<li>비추(방어도 낮음) : 사비나, 프로테우스, 사르타나</li>
+							</ul>
+						</div>
+
+						<h5 class="title3 text-primary">플랭크 배치 가이드</h5>
+						<p class="text-red mb-2">가이드가 정답은 아닙니다. 참고하셔서 자기만의 노하우로 덱을 완성해 보세요!</p>
+						<ul class="list-dot">
+							<li>
+								추천 속성 : <i class="ico ico-elementholy"></i> <strong>신성 속성</strong><br>
+								센터 옆에 반대속성을 옆에 배치하여 타일 피해를 최소화 하는 전략을 활용해 주세요. 단, 특수스킬 시너지가 훨씬 큰 경우 속성 배치를 고집할 필요는 없습니다.
+							</li>
+							<li>센터를 보호하거나 보조할 수 있는 특수스킬을 가진 영웅을 배치해 주세요. 가급적 보통/빠름/매우빠름 추천합니다.</li>
+							<li>센터가 반격이나 딜러일 때는 플랭크에 힐러가 오는 것이 유리합니다.</li>
+							<li>센터가 힐러일 때는 플랭크에 반격이 오는 것이 유리합니다.</li>
+						</ul>
+
+						<div class="box mt-2">
+							<ul class="list-dot">
+								<li>추천 4성 : 그레텔, 미스트 > 차오, 리 시우, 오공</li>
+								<li>추천 5성 : 기네비어, 델리아, 네이트, 드레이크퐁, 포세이돈 > 비비카(의상), 흰토끼, 오나텔, 준(의상), 란비르</li>
+							</ul>
+						</div>
+
+						<div class="box bg-darkgprimary text-center mt-2">
+							<p class="mb-2">상성 최적화 추천 예시</p>
+							<div>
+								<i class="ico ico-elementice"></i>
+								<span class="text-lightblue">얼음</span>
+
+								<i class="ico ico-elementnature"></i>
+								<span class="text-lightgreen">자연</span>
+
+								<i class="ico ico-elementdark"></i>
+								<span class="text-lightpurple">암흑</span>
+
+								<i class="ico ico-elementholy"></i>
+								<span class="text-lightyellow">신성</span>
+
+								<i class="ico ico-elementfire"></i>
+								<span class="text-lightred">화염</span>
+							</div>
+							<div class="mt-1">
+								<i class="ico ico-elementnature"></i>
+								<span class="text-lightgreen">자연</span>
+
+								<i class="ico ico-elementholy"></i>
+								<span class="text-lightyellow">신성</span>
+
+								<i class="ico ico-elementdark"></i>
+								<span class="text-lightpurple">암흑</span>
+
+								<i class="ico ico-elementice"></i>
+								<span class="text-lightblue">얼음</span>
+
+								<i class="ico ico-elementfire"></i>
+								<span class="text-lightred">화염</span>
+							</div>
+							<div class="mt-1">
+								빨노초 +
+
+								<i class="ico ico-elementholy"></i>
+								<span class="text-lightyellow">신성</span>
+
+								<i class="ico ico-elementdark"></i>
+								<span class="text-lightpurple">암흑</span>
+
+								<i class="ico ico-elementholy"></i>
+								<span class="text-lightyellow">신성</span>
+
+								+ 빨노초
+							</div>
+						</div>
+
+						<h5 class="title3 text-primary">그밖의 덱 구성 팁</h5>
+						<ul class="list-dot">
+							<li>동시에 마나가 찬 경우 왼쪽부터 스킬을 씁니다. 버프형 캐릭터를 왼쪽에 배치하여 풀버프 후 공격할 수 있도록 유도할 수 있습니다.</li>
+						</ul>
+
 					</div>
 				</div>
 				<div class="tab-content" id="tab-titan">

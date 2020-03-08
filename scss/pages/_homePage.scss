@@ -23,7 +23,7 @@
   margin: 0 -1 * $spacing;
   border-top: 1px solid #eee;
 
-  dt {
+  >dt {
     border-bottom: 1px solid #eee;
 
     a {
@@ -128,4 +128,25 @@
 // 소셜댓글
 #disqus_thread {
   margin-top: 30px;
+}
+
+// 용어설명
+.word-dic {
+  dl {
+    display: flex;
+
+  }
+
+  dt {
+    font-weight: bold;
+    color: $primary;
+    white-space: nowrap;
+    margin-right: 4px;
+
+    &:after {
+      content: ' = ';
+    }
+  }
+
+  dd {}
 }
