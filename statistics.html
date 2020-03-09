@@ -30,7 +30,8 @@
 				<h2 class="title1">전쟁통계</h2>
 				<nav class="main-tab-nav">
 					<ul class="tab-list">
-						<li class="on"><a href="#tab-2002">2020.02</a></li>
+						<li class="on"><a href="#tab-2003">2020.03</a></li>
+						<li><a href="#tab-2002">2020.02</a></li>
 						<li><a href="#tab-2001">2020.01</a></li>
 						<li><a href="#tab-1912">2019.12</a></li>
 					</ul>
@@ -39,6 +40,67 @@
 					<div id="chart"></div>
 				</div>
 				<p class="date-src">자료제공 : Libera</p>
+				<div class="tab-content" id="tab-2003">
+					<dl class="toggle-list">
+						<dt>
+							<a href="#">
+								<span class="date">
+									2020.03.09
+								</span>
+								<span>
+									<span class="ml-2 win">승리</span>
+									<i class="fa fa-chevron-right fa-sm ml-1"></i>
+								</span>
+							</a>
+						</dt>
+						<dd>
+							<ul class="list-dot">
+								<li>상대동맹 : URZAD SAKRBOWY!!! (대표 : kufel234 55랩 )</li>
+								<li>전쟁점수 : 71259(+2268 ): 67504( -1493)</li>
+								<li>전쟁결과 : 4499:3495 (상자10)</li>
+								<li>남은기회 : 7:9</li>
+							</ul>
+						</dd>
+						<dt>
+							<a href="#">
+								<span class="date">
+									2020.03.05
+								</span>
+								<span>
+									<span class="ml-2 lose">패배</span>
+									<i class="fa fa-chevron-right fa-sm ml-1"></i>
+								</span>
+							</a>
+						</dt>
+						<dd>
+							<ul class="list-dot">
+								<li>상대동맹 : KELUARGA'YgPenting Heppy (대표 : Jangkrik kota 32랩 )</li>
+								<li>전쟁점수 : 71120(-1384 ): 74167( +1706)</li>
+								<li>전쟁결과 : 4583:4777 (상자5)</li>
+								<li>남은기회 : 5:6</li>
+							</ul>
+						</dd>
+						<dt>
+							<a href="#">
+								<span class="date">
+									2020.02.27
+								</span>
+								<span>
+									<span class="ml-2 lose">패배</span>
+									<i class="fa fa-chevron-right fa-sm ml-1"></i>
+								</span>
+							</a>
+						</dt>
+						<dd>
+							<ul class="list-dot">
+								<li>상대동맹 : SingaporeLions ([Lek]53)</li>
+								<li>전쟁점수 : 70471(?????:-96 ): 62272 (????? : +12045)</li>
+								<li>전쟁결과 : 3877:3953 (상자24)</li>
+								<li>남은기회 : 4:6</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
 				<div class="tab-content" id="tab-2002">
 					<dl class="toggle-list">
 						<dt>
@@ -314,6 +376,7 @@
 				},
 				y2: {
 					show: true,
+					max: 35,
 					tick: {
 						culling: {
 							max: 3
@@ -324,7 +387,7 @@
 			bar: {
 				width: {
 					ratio: 0.9,
-					max: 4
+					max: 5
 				}
 			},
 		});
