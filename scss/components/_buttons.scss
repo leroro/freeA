@@ -18,46 +18,9 @@
 	}
 }
 
-// .pagination {
-
-// 	+.btn-group-flex,
-// 	+.btn-group-block {
-// 		margin-top: 15px;
-// 	}
-// }
-
-.btn-group-flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 15px;
-
-	.btn {
-		flex: 1 1 5em;
-
-		+.btn {
-			margin-left: 10px;
-		}
-	}
-}
-
-.btn-group-block {
-	text-align: center;
-	margin-top: 15px;
-
-	.btn {
-		// display: block;
-		width: 100%;
-
-		+.btn {
-			margin-top: 8px;
-		}
-	}
-}
-
 .btn-sm {
 	padding: 0 9px;
-	height: 23px;
+	height: 24px;
 	border-radius: 3px;
 	border: 1px solid transparent;
 
@@ -110,6 +73,15 @@
 
 	&:active {
 		background-color: darken($primary, 3%);
+	}
+}
+
+.btn-red {
+	color: $white;
+	background-color: $red;
+
+	&:active {
+		background-color: darken($red, 3%);
 	}
 }
 

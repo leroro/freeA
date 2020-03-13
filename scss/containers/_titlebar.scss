@@ -27,16 +27,23 @@
     background: url(#{$url-img}/favicon.png) no-repeat left 3px;
     background-size: 20px auto;
     font-size: 17px;
+    line-height: 20px;
     font-weight: 500;
   }
 
-  .btn-url-cpoy {
+  a {
+    vertical-align: middle;
+  }
+
+  .btn-url-copy {
     margin-left: 4px;
     font-size: 11px;
     font-weight: normal;
+    vertical-align: middle;
 
     .url {
       opacity: .8;
+      vertical-align: middle;
     }
 
     .btn {

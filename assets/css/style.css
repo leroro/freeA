@@ -1357,6 +1357,135 @@ caption.sr-only {
   font-size: 0.18rem;
 }
 
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn .ico + .text {
+  margin-left: 5px;
+}
+
+.btn-sm {
+  padding: 0 9px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btn-md {
+  padding: 0 11px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btn-lg {
+  padding: 0 20px;
+  height: 47px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-xl {
+  padding: 0 20px;
+  height: 52px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #636363;
+}
+
+.btn-default:active {
+  background-color: #5b5b5b;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #5277ca;
+}
+
+.btn-primary:active {
+  background-color: #466ec6;
+}
+
+.btn-red {
+  color: #fff;
+  background-color: #ff0066;
+}
+
+.btn-red:active {
+  background-color: #f00060;
+}
+
+.btn-outline-default {
+  color: #333;
+  border-color: #494949;
+  background-color: #fff;
+}
+
+.btn-outline-default:active {
+  background-color: #f2f2f2;
+}
+
+.btn-outline-primary {
+  color: #5277ca;
+  border-color: #5277ca;
+  background-color: #f3e5e5;
+}
+
+.btn-outline-primary:active {
+  background-color: rgba(243, 229, 229, 0.05);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: #ddc8c8;
+  border-color: #eedbdb;
+  background-color: #f1f1f1;
+}
+
+.btn-outline-gray {
+  color: #555;
+  border-color: #878787;
+  background-color: #fff;
+}
+
+.btn-datepicker {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  vertical-align: middle;
+  color: transparent;
+  white-space: nowrap;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background: url(../images/ico-datepicker.png) no-repeat center center;
+  background-size: 20px 21px;
+}
+
 .ico {
   display: inline-block;
   background-repeat: no-repeat;
@@ -2171,20 +2300,27 @@ caption.sr-only {
   background: url(../images/favicon.png) no-repeat left 3px;
   background-size: 20px auto;
   font-size: 17px;
+  line-height: 20px;
   font-weight: 500;
 }
 
-#titlebar .btn-url-cpoy {
+#titlebar a {
+  vertical-align: middle;
+}
+
+#titlebar .btn-url-copy {
   margin-left: 4px;
   font-size: 11px;
   font-weight: normal;
+  vertical-align: middle;
 }
 
-#titlebar .btn-url-cpoy .url {
+#titlebar .btn-url-copy .url {
   opacity: .8;
+  vertical-align: middle;
 }
 
-#titlebar .btn-url-cpoy .btn {
+#titlebar .btn-url-copy .btn {
   display: inline-block;
   height: 16px;
   line-height: 16px;
