@@ -26,7 +26,7 @@
 		<header id="titlebar"></header>
 		<article id="content">
 			<div class="container">
-				<h2 class="title1">정보공유</h2>
+				<h2 class="title1">정보</h2>
 				<div class="box">
 					<ul class="list-dot">
 						<li>
@@ -53,171 +53,239 @@
 						</li>
 					</ul>
 				</div>
-				<dl class="toggle-list mt-3">
-					<dt>
-						<a href="#">
-							<span>속성별 / 전리품 수집용 사냥터</span>
-							<i class="fa fa-chevron-right fa-sm ml-1"></i>
-						</a>
-					</dt>
-					<dd>
-						<div class="box bg-darkgprimary">
-							<ul>
+
+				<nav class="main-tab-nav mt-4">
+					<ul class="tab-list">
+						<li class="on">
+							<a href="#tab-info">유용한 팁</a>
+						</li>
+						<li>
+							<a href="#tab-calendar">이벤트 일정</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="tab-content" id="tab-info">
+					<dl class="toggle-list mt-3">
+						<dt>
+							<a href="#">
+								<span>속성별 / 전리품 수집용 사냥터</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<div class="box bg-darkgprimary">
+								<ul>
+									<li>
+										<i class="ico ico-elementfire"></i>
+										<span class="text-lightred">5-8/11-6/19-4/20-4/20-7/시즌2 3-4</span>
+									</li>
+									<li>
+										<i class="ico ico-elementice"></i>
+										<span class="text-lightblue">8-1/8-3/8-5/8-7/9-1/9-3/9-5/13-5/13-8/14-5</span>
+									</li>
+									<li>
+										<i class="ico ico-elementnature"></i>
+										<span class="text-lightgreen">6-3/6-6/7-5/17-5</span>
+									</li>
+									<li>
+										<i class="ico ico-elementholy"></i>
+										<span class="text-lightyellow">9-4/9-7/10-6/12-3/12-9/16-3</span>
+									</li>
+									<li>
+										<i class="ico ico-elementdark"></i>
+										<span class="text-lightpurple">3-4/4-3/5-5/7-4/8-4/10-4/11-7/12-5</span>
+									</li>
+								</ul>
+							</div>
+							<ul class="list-dot mt-2">
+								<li>3깃 최다 몹 수 : 7-4 (7회시 100수배 완료)</li>
+								<li>3깃 최다 모집병 : 8-7</li>
+								<li>3깃 최고 경험치 : 9-1</li>
+							</ul>
+							<h3 class="title3">아틀란티스 이벤트시 효율적인 사냥터</h3>
+							<ul class="list-dot mt-2">
+								<li>몹 수 : 6-9, 15-9</li>
+								<li>의복(전리품) : 4-9</li>
+								<li>가방 : 1-2, 1-3, 1-9 어려움 (7깃)</li>
+								<li>3깃 최고 경험치 : 9-10 일반</li>
+							</ul>
+							<p class="text-right mt-2">(출처 : 엠퍼 앱 내 채팅)</p>
+						</dd>
+						<dt>
+							<a href="#">
+								<span><span class="badge">New</span> 추천 3성 영웅 (의상 밑줄)</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<div class="box bg-darkgprimary">
+								<ul class="list-dot mt-1">
+									<li class="text-lightblue"><u>군나르</u>(의상, 피해분산, 아군방업), 가토(단일빠름, 아군3면역)</li>
+									<li class="text-lightgreen">밸리스(힐, 적해제), 므네세우스(적해제, 단일빠름)</li>
+									<li class="text-lightred">나마하게(단일빠름), <u>호크문</u>(의상, 힐, 의상공업도트힐)</li>
+									<li class="text-lightpurple">발타자르(단일빠름), <u>타이럼</u>(의상, 적해제, 단일빠름, 방어도높음)</li>
+									<li class="text-yellow"><u>베인</u>(의상, 단일빠름), 카일라니(피해분산, 아군방업), 멜리아(빠름전체딜, 아군치명타버프)</li>
+									<li>
+										그외 발할라 신규 3성 : 비-울프(3인공방버프, 도트힐, 가토와 조합해 디버프 무시 가능), 엘-둔(3타겟, 마나재생다운),
+										노르드리(3타겟, 얼음속성약화), 비요른(2타겟, 신성추가피해), 크바시르(전체소환수)
+									</li>
+								</ul>
+							</div>
+						</dd>
+						<dt>
+							<a href="#">
+								<span><span class="badge">New</span> 추천 4성 영웅 (의상 밑줄)</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<div class="box bg-darkgprimary">
+								<ul class="list-dot mt-1">
+									<li class="text-lightblue"><u>소냐</u>(의상, 적해제, 빠름단일), 키릴(힐, 공업방업), 보릴(반격, 방어도높음)</li>
+									<li class="text-lightgreen"><u>멜렌도르</u>(의상, 힐, 적해제), 케드먼(적해제, 빠름단일), 버디(3타겟 공방깎, 아군3쫄소환), 피터스(1타겟차단,
+										단일빠름), 브린힐드(3아군 힐+해제면역+특수방업+마나재생업), 카쉬렉(3아군큰힐, 속성방업)</li>
+									<li class="text-lightred">윌버(피해분산, 아군방업), <u>볼드터스크</u>(의상, 힐, 공업)</li>
+									<li class="text-lightpurple">
+										<u>리가드</u>(의상, 힐, 아군해제, 의상공업도트힐),
+										프로테우스(3타겟차단, 난이도높은 보스전 필수), 사비나 (힐, 적해제)
+									</li>
+									<li class="text-yellow">오공(타일딜업, 타이탄용), 미스트(3타겟 특수스킬방깎), <u>리 시우</u>(의상, 보통전체딜, 적마나감소)</li>
+								</ul>
+							</div>
+						</dd>
+						<dt>
+							<a href="#">
+								<span>4성 각성 아이템 목록 (5성 영웅 각성)</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<p>공통 : 음식 708k, 다마스커스 검 1, 전술 지침서 1</p>
+							<ul class="list-dot mt-2">
 								<li>
-									<i class="ico ico-elementfire"></i>
-									<span class="text-lightred">5-8/11-6/19-4/20-4/20-7/시즌2 3-4</span>
+									<i class="ico ico-elementfire mr-1"></i>
+									암살검 4, 신비의 반지 6
 								</li>
 								<li>
-									<i class="ico ico-elementice"></i>
-									<span class="text-lightblue">8-1/8-3/8-5/8-7/9-1/9-3/9-5/13-5/13-8/14-5</span>
+									<i class="ico ico-elementice mr-1"></i>
+									따뜻한 망토 4, 망원경 6
 								</li>
 								<li>
-									<i class="ico ico-elementnature"></i>
-									<span class="text-lightgreen">6-3/6-6/7-5/17-5</span>
+									<i class="ico ico-elementnature mr-1"></i>
+									튼튼한 방패 4, 신비한 물약 6
 								</li>
 								<li>
-									<i class="ico ico-elementholy"></i>
-									<span class="text-lightyellow">9-4/9-7/10-6/12-3/12-9/16-3</span>
+									<i class="ico ico-elementholy mr-1"></i>
+									마법 구슬 4, 맹독 다트 6
 								</li>
 								<li>
-									<i class="ico ico-elementdark"></i>
-									<span class="text-lightpurple">3-4/4-3/5-5/7-4/8-4/10-4/11-7/12-5</span>
+									<i class="ico ico-elementdark mr-1"></i>
+									함정 도구 4, 고급스러운 타바드 6
 								</li>
 							</ul>
-						</div>
-						<ul class="list-dot mt-2">
-							<li>3깃 최다 몹 수 : 7-4 (7회시 100수배 완료)</li>
-							<li>3깃 최다 모집병 : 8-7</li>
-							<li>3깃 최고 경험치 : 9-1</li>
-						</ul>
-						<h3 class="title3">아틀란티스 이벤트시 효율적인 사냥터</h3>
-						<ul class="list-dot mt-2">
-							<li>몹 수 : 6-9, 15-9</li>
-							<li>의복(전리품) : 4-9</li>
-							<li>가방 : 1-2, 1-3, 1-9 어려움 (7깃)</li>
-							<li>3깃 최고 경험치 : 9-10 일반</li>
-						</ul>
-						<p class="text-right mt-2">(출처 : 엠퍼 앱 내 채팅)</p>
-					</dd>
-					<dt>
-						<a href="#">
-							<span>자주쓰는 게임 용어 및 줄임말</span>
-							<i class="fa fa-chevron-right fa-sm ml-1"></i>
-						</a>
-					</dt>
-					<dd>
-						<div class="word-dic">
-							<dl>
-								<dt>탱커 / 힐러 / 딜러</dt>
-								<dd>방어담당 / 치유담당 / 공격담당</dd>
-							</dl>
-							<dl>
-								<dt>공덱 / 방덱</dt>
-								<dd>공격용 / 방어용 카드 한벌</dd>
-							</dl>
-							<dl>
-								<dt>플랭크</dt>
-								<dd>센터 양 옆</dd>
-							</dl>
-							<dl>
-								<dt>사이드</dt>
-								<dd>덱의 가장자리</dd>
-							</dl>
-							<dl>
-								<dt>탄</dt>
-								<dd>타이탄</dd>
-							</dl>
-							<dl>
-								<dt>탄플</dt>
-								<dd>타이탄 플라스크</dd>
-							</dl>
-							<dl>
-								<dt>설거지</dt>
-								<dd>전쟁에서 센터가 뚫린 적군을 마무리하는 것</dd>
-							</dl>
-							<dl>
-								<dt>빵굽다</dt>
-								<dd>획득 포인트 0점 (유사어 : 꼬순내난다)</dd>
-							</dl>
-							<dl>
-								<dt>돗뎀(돗딜)</dt>
-								<dd>도트 데미지, 여러차례에 나누어 입히는 피해</dd>
-							</dl>
-							<dl>
-								<dt>버프 / 디버프</dt>
-								<dd>강화효과 / 약화효과</dd>
-							</dl>
-							<dl>
-								<dt>너프</dt>
-								<dd>하향 조정</dd>
-							</dl>
-						</div>
-					</dd>
-					<dt>
-						<a href="#">
-							<span>4성 각성 아이템 목록 (5성 영웅 각성)</span>
-							<i class="fa fa-chevron-right fa-sm ml-1"></i>
-						</a>
-					</dt>
-					<dd>
-						<p>공통 : 음식 708k, 다마스커스 검 1, 전술 지침서 1</p>
-						<ul class="list-dot mt-2">
-							<li>
-								<i class="ico ico-elementfire mr-1"></i>
-								암살검 4, 신비의 반지 6
-							</li>
-							<li>
-								<i class="ico ico-elementice mr-1"></i>
-								따뜻한 망토 4, 망원경 6
-							</li>
-							<li>
-								<i class="ico ico-elementnature mr-1"></i>
-								튼튼한 방패 4, 신비한 물약 6
-							</li>
-							<li>
-								<i class="ico ico-elementholy mr-1"></i>
-								마법 구슬 4, 맹독 다트 6
-							</li>
-							<li>
-								<i class="ico ico-elementdark mr-1"></i>
-								함정 도구 4, 고급스러운 타바드 6
-							</li>
-						</ul>
-						<!-- <img src="assets/images/img-item-list.jpg" alt="">
-						<p class="text-right mt-2">(출처 : 보두앵4세 유튜브)</p> -->
-					</dd>
-					<dt>
-						<a href="#">
-							<span>3성 각성 아이템 목록 (4성 영웅 각성)</span>
-							<i class="fa fa-chevron-right fa-sm ml-1"></i>
-						</a>
-					</dt>
-					<dd>
-						<p>공통 : 음식 442k, 나침반 1, 질 좋은 장갑 1</p>
-						<ul class="list-dot mt-2">
-							<li>
-								<i class="ico ico-elementfire mr-1"></i>
-								사슬갑옷 셔츠 3, 암살검 4
-							</li>
-							<li>
-								<i class="ico ico-elementice mr-1"></i>
-								전투 교본 3, 따뜻한 망토 4
-							</li>
-							<li>
-								<i class="ico ico-elementnature mr-1"></i>
-								칼집 3, 튼튼한 방패 4
-							</li>
-							<li>
-								<i class="ico ico-elementholy mr-1"></i>
-								사슬갑옷 셔츠 3, 마법 구슬 4
-							</li>
-							<li>
-								<i class="ico ico-elementdark mr-1"></i>
-								칼집 3, 함정 도구 4
-							</li>
-						</ul>
-					</dd>
-				</dl>
+							<!-- <img src="assets/images/img-item-list.jpg" alt="">
+							<p class="text-right mt-2">(출처 : 보두앵4세 유튜브)</p> -->
+						</dd>
+						<dt>
+							<a href="#">
+								<span>3성 각성 아이템 목록 (4성 영웅 각성)</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<p>공통 : 음식 442k, 나침반 1, 질 좋은 장갑 1</p>
+							<ul class="list-dot mt-2">
+								<li>
+									<i class="ico ico-elementfire mr-1"></i>
+									사슬갑옷 셔츠 3, 암살검 4
+								</li>
+								<li>
+									<i class="ico ico-elementice mr-1"></i>
+									전투 교본 3, 따뜻한 망토 4
+								</li>
+								<li>
+									<i class="ico ico-elementnature mr-1"></i>
+									칼집 3, 튼튼한 방패 4
+								</li>
+								<li>
+									<i class="ico ico-elementholy mr-1"></i>
+									사슬갑옷 셔츠 3, 마법 구슬 4
+								</li>
+								<li>
+									<i class="ico ico-elementdark mr-1"></i>
+									칼집 3, 함정 도구 4
+								</li>
+							</ul>
+						</dd>
+						<dt>
+							<a href="#">
+								<span>자주쓰는 게임 용어 및 줄임말</span>
+								<i class="fa fa-chevron-right fa-sm ml-1"></i>
+							</a>
+						</dt>
+						<dd>
+							<div class="word-dic">
+								<dl>
+									<dt>탱커 / 힐러 / 딜러</dt>
+									<dd>방어담당 / 치유담당 / 공격담당</dd>
+								</dl>
+								<dl>
+									<dt>공덱 / 방덱</dt>
+									<dd>공격용 / 방어용 카드 한벌</dd>
+								</dl>
+								<dl>
+									<dt>플랭크</dt>
+									<dd>센터 양 옆</dd>
+								</dl>
+								<dl>
+									<dt>사이드</dt>
+									<dd>덱의 가장자리</dd>
+								</dl>
+								<dl>
+									<dt>탄</dt>
+									<dd>타이탄</dd>
+								</dl>
+								<dl>
+									<dt>탄플</dt>
+									<dd>타이탄 플라스크</dd>
+								</dl>
+								<dl>
+									<dt>설거지</dt>
+									<dd>전쟁에서 센터가 뚫린 적군을 마무리하는 것</dd>
+								</dl>
+								<dl>
+									<dt>빵굽다</dt>
+									<dd>획득 포인트 0점 (유사어 : 꼬순내난다)</dd>
+								</dl>
+								<dl>
+									<dt>돗뎀(돗딜)</dt>
+									<dd>도트 데미지, 여러차례에 나누어 입히는 피해</dd>
+								</dl>
+								<dl>
+									<dt>버프 / 디버프</dt>
+									<dd>강화효과 / 약화효과</dd>
+								</dl>
+								<dl>
+									<dt>너프</dt>
+									<dd>하향 조정</dd>
+								</dl>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="tab-content" id="tab-calendar">
+					<dl class="history-list mb-4">
+						<dt>매월 1주차 금~일</dt>
+						<dd>아틀란티스 이벤트</dd>
+						<dt>매월 2주차 수~일</dt>
+						<dd>도전 이벤트 (3/4/5성 챌린지)</dd>
+						<dt>매월 3주차 월~수</dt>
+						<dd>의상 이벤트</dd>
+						<dt>매월 4주차 목~일</dt>
+						<dd>발할라 이벤트(시즌3)</dd>
+					</dl>
+				</div>
 				<p class="text-sm mt-2">유용한 팁&amp;정보가 있다면 아래에 댓글로 남겨주시거나 leroro23@gmail.com 로 제보해 주세요.</p>
 				<div id="disqus_thread"></div>
 			</div>

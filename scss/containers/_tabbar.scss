@@ -58,12 +58,18 @@
   .badge {
     top: 11px;
     position: absolute;
-    background-color: $red;
-    margin-left: 13px;
-    width: 6px;
-    height: 6px;
-    color: $red;
-    border-radius: 50%;
-    overflow: hidden;
+    margin: 0 0 0 13px;
   }
+}
+
+.badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -4px 2px 0 0;
+  background-color: $red;
+  width: 6px;
+  height: 6px;
+  color: $red;
+  border-radius: 50%;
+  overflow: hidden;
 }
