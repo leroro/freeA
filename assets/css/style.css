@@ -1376,6 +1376,15 @@ caption.sr-only {
   margin-left: 5px;
 }
 
+.btn-xs {
+  padding: 0 6px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .btn-sm {
   padding: 0 9px;
   height: 24px;
@@ -2482,16 +2491,16 @@ caption.sr-only {
           transition-duration: .2s;
 }
 
-.toggle-list > dt.on {
+.toggle-list > dt:target, .toggle-list > dt.on {
   font-weight: bold;
 }
 
-.toggle-list > dt.on .fa-chevron-right {
+.toggle-list > dt:target .fa-chevron-right, .toggle-list > dt.on .fa-chevron-right {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.toggle-list > dt.on + dd {
+.toggle-list > dt:target + dd, .toggle-list > dt.on + dd {
   display: block;
 }
 

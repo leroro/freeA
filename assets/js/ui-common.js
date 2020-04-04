@@ -45,6 +45,7 @@ $(document).on('click', '.tab-list a', function (e) {
 
 // 토글 목록
 $('.toggle-list dt a').click(function (e) {
+	window.location.hash = '';
 	e.preventDefault();
 	$(this).parent('dt').toggleClass('on').siblings('dt').removeClass('on');
 });
