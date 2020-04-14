@@ -2267,7 +2267,7 @@ caption.sr-only {
 
 .wrapper {
   padding-top: 45px;
-  padding-bottom: 134px;
+  padding-bottom: 70px;
 }
 
 .container {
@@ -2389,8 +2389,11 @@ caption.sr-only {
   opacity: .7;
 }
 
-#tabbar ul {
+#tabbar .tabber {
   border-top: 1px solid #ddd;
+}
+
+#tabbar .tabber ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2401,48 +2404,48 @@ caption.sr-only {
           align-items: center;
 }
 
-#tabbar li {
+#tabbar .tabber li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 4em;
           flex: 1 1 4em;
 }
 
-#tabbar li.on {
+#tabbar .tabber li.on {
   color: #5277ca;
   font-weight: bold;
 }
 
-#tabbar li.on .fa,
-#tabbar li.on .far,
-#tabbar li.on .fas {
+#tabbar .tabber li.on .fa,
+#tabbar .tabber li.on .far,
+#tabbar .tabber li.on .fas {
   opacity: 1;
 }
 
-#tabbar li.on .text {
+#tabbar .tabber li.on .text {
   font-weight: bold;
 }
 
-#tabbar a {
+#tabbar .tabber a {
   position: relative;
   display: block;
   padding: 14px 0 10px;
 }
 
-#tabbar .fa,
-#tabbar .far,
-#tabbar .fas {
+#tabbar .tabber .fa,
+#tabbar .tabber .far,
+#tabbar .tabber .fas {
   opacity: .5;
   font-size: 18px;
 }
 
-#tabbar .text {
+#tabbar .tabber .text {
   display: block;
   width: 100%;
   margin-top: 3px;
   font-weight: 500;
 }
 
-#tabbar .badge {
+#tabbar .tabber .badge {
   top: 11px;
   position: absolute;
   margin: 0 0 0 13px;

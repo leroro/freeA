@@ -35,56 +35,59 @@
     }
   }
 
-  ul {
+  .tabber {
     border-top: 1px solid #ddd;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 
-  li {
-    flex: 1 1 4em;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-    &.on {
-      color: $primary;
-      font-weight: bold;
+    li {
+      flex: 1 1 4em;
 
-      .fa,
-      .far,
-      .fas {
-        opacity: 1;
-      }
-
-      .text {
+      &.on {
+        color: $primary;
         font-weight: bold;
+
+        .fa,
+        .far,
+        .fas {
+          opacity: 1;
+        }
+
+        .text {
+          font-weight: bold;
+        }
       }
     }
-  }
 
-  a {
-    position: relative;
-    display: block;
-    padding: 14px 0 10px;
-  }
+    a {
+      position: relative;
+      display: block;
+      padding: 14px 0 10px;
+    }
 
-  .fa,
-  .far,
-  .fas {
-    opacity: .5;
-    font-size: 18px;
-  }
+    .fa,
+    .far,
+    .fas {
+      opacity: .5;
+      font-size: 18px;
+    }
 
-  .text {
-    display: block;
-    width: 100%;
-    margin-top: 3px;
-    font-weight: 500;
-  }
+    .text {
+      display: block;
+      width: 100%;
+      margin-top: 3px;
+      font-weight: 500;
+    }
 
-  .badge {
-    top: 11px;
-    position: absolute;
-    margin: 0 0 0 13px;
+    .badge {
+      top: 11px;
+      position: absolute;
+      margin: 0 0 0 13px;
+    }
   }
 }
 
