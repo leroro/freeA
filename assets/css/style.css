@@ -2282,6 +2282,7 @@ caption.sr-only {
   left: 0;
   right: 0;
   background-color: #31539f;
+  padding: 0 20px;
   color: #fff;
 }
 
@@ -2297,7 +2298,6 @@ caption.sr-only {
           align-items: center;
   height: 45px;
   text-align: center;
-  padding: 0 20px;
 }
 
 #titlebar .logo {
