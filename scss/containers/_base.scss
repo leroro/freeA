@@ -1,6 +1,6 @@
 .wrapper {
   padding-top: $titlebar-height;
-  padding-bottom: $tabbar-height;
+  padding-bottom: $tabbar-height + $banner-height;
 }
 
 .container {

@@ -7,10 +7,36 @@
   height: $tabbar-height;
 
   background-color: #fff;
-  border-top: 1px solid #ddd;
   text-align: center;
 
+  .banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: $banner-height;
+    background-color: rgba($red, .8);
+    color: #fff;
+
+    .container {
+      position: relative;
+      padding: 10px 0;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+
+      .fas {
+        opacity: .7;
+      }
+    }
+  }
+
   ul {
+    border-top: 1px solid #ddd;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
