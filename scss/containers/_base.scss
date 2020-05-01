@@ -1,6 +1,10 @@
 .wrapper {
   padding-top: $titlebar-height;
-  padding-bottom: $tabbar-height;
+  padding-bottom: $tabbar-height + 60px;
+
+  &.ribbon-closed {
+    padding-bottom: $tabbar-height;
+  }
 }
 
 .container {
