@@ -1357,6 +1357,10 @@ caption.sr-only {
   font-size: 0.18rem;
 }
 
+.link .fa {
+  font-size: .9em;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2621,4 +2625,3 @@ caption.sr-only {
 .word-dic dt:after {
   content: ' = ';
 }
-/*# sourceMappingURL=style.css.map */
